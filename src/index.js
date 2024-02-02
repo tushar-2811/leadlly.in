@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import Home from './Pages/Home';
+import "./index.css";
+import { NextUIProvider } from "@nextui-org/react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
+    <NextUIProvider>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+    </NextUIProvider>
   </React.StrictMode>
   , document.getElementById('root')
 

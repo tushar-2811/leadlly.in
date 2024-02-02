@@ -1,5 +1,5 @@
 import { Box, Show, Text } from "@chakra-ui/react";
-
+import BubbleText from "../subcomponents/bubletext";
 const Name = () => {
   return (
     <Text
@@ -7,7 +7,7 @@ const Name = () => {
       fontSize={{ base: "18px", md: "24px", lg: "30px" }}
       style={{ textShadow: "#FC0 1px 0 10px" }}
     >
-      Leadlly
+      leadlly
     </Text>
 
     // <Show breakpoint='(max-width: 1000px)'>

@@ -12,7 +12,7 @@ export default function Footer(){
             width={["100%"]} >
 
         <Flex h={"auto"} alignItems={"center"} justifyContent={"center"} direction ={"row"} flexWrap={"wrap"} >
-            <Box  w={"500px"}  bg={useColorModeValue("gray.400", "gray.700")} h={"200px"} m={4}>
+            <Box  w={"500px"}  bg={useColorModeValue("gray.100", "gray.800")} h={"200px"} m={4}>
                 
             </Box>
             
@@ -24,9 +24,9 @@ export default function Footer(){
             templateColumns={'repeat(2, 1fr)'}
             gap={4}
             >
-                <GridItem colSpan={1}  bg={useColorModeValue("gray.400", "gray.700")}/>
-                <GridItem colSpan={1}  bg={useColorModeValue("gray.400", "gray.700")}/>
-                <GridItem colSpan={2}  bg={useColorModeValue("gray.400", "gray.700")}/>
+                <GridItem colSpan={1}  bg={useColorModeValue("gray.100", "gray.800")}/>
+                <GridItem colSpan={1}  bg={useColorModeValue("gray.100", "gray.800")}/>
+                <GridItem colSpan={2}  bg={useColorModeValue("gray.100", "gray.800")}/>
 
 
             </Grid>

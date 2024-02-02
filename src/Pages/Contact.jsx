@@ -1,14 +1,21 @@
-import React from "react";
 
+import { Fragment, useState } from 'react';
 
-const Contact = () => {
+import {Box, useColorModeValue , } from "@chakra-ui/react";
+import React from 'react';
+export default function Contact() {
+  
+
   return (
-    <div id="Contact" style={{height:"800px"}}>
-      <h1 style={{fontSize:"50px",padding:"20%"}}>
-        Contact
-      </h1>
-    </div>
-  );
-};
+    <div className="flex flex-col items-center py-16">
+      <div className="h-32 w-32">
+        
+      </div>
 
-export default Contact;
+      
+
+       
+    </div>
+  )
+}
+

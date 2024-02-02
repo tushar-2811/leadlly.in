@@ -18,6 +18,9 @@
     #hamburger{
       display: none;
     }
+    .btnRes{
+      background: transparent;
+    }
   }
   @media (max-width:800px) {
     #resumeBtn{
