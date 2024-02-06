@@ -23,7 +23,7 @@ const Home = () => {
    
     <div id="About" style={{height:"auto"}}>
       <Box   h={{ base: "1300", sm: "1300", md: "1300px", lg: "650px"}} my={5}
-      bg={useColorModeValue("gray.1", "gray.800")}
+      bg={useColorModeValue("#F0F0EB", "gray.800")}
        w={"100vw"}>  
         <Flex h={"auto"} alignItems={"center"} justifyContent={"center"} flexWrap={"wrap"}>
         <Box h ={'600px'}
@@ -32,17 +32,17 @@ const Home = () => {
           sm: "80vw",
           md: "60vw",
           lg: "45vw",
-        }} bg={useColorModeValue("gray.300", "gray.700")} ></Box> 
+        }} bg={useColorModeValue("#FFFFFF", "gray.700")} ></Box> 
         <Grid h={'600px'} w ={{
           base: "80vw",
           sm: "80vw",
           md: "60vw",
           lg: "45vw",}} templateColumns={'repeat(2, 1fr)'} m={4} gap={4}>
 
-            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("gray.300", "gray.700")}  />
-            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("gray.300", "gray.700")} />
-            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("gray.300", "gray.700")} />
-            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("gray.300", "gray.700")} />
+            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("#FFFFFF", "gray.700")}  />
+            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("#FFFFFF", "gray.700")} />
+            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("#FFFFFF", "gray.700")} />
+            <GridItem colSpan={{ base: 2, sm: 2, md: 1, lg: 1}} bg={useColorModeValue("#FFFFFF", "gray.700")} />
           </Grid>
       
         </Flex>

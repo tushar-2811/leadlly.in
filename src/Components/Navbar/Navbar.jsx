@@ -13,6 +13,8 @@ import {
   useDisclosure,
   IconButton,
   Hide,
+  background,
+
 } from "@chakra-ui/react";
 import {
   MoonIcon,
@@ -67,26 +69,26 @@ export default function Navbar() {
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
               >
-                <Button className="btnRes">
+                <Button variant="outline" _hover={{bgColor:"#7986CB"}}  className="btnRes">
                   <Link  to ="/">
                     {" "}
                     <b>Home</b>
                     </Link>
                 </Button>
 
-                <Button className="btnRes">
+                <Button variant="outline" _hover={{bgColor:"#7986CB"}} className="btnRes">
                   <Link to="/test">
                     <b>TestPage</b>
                   </Link>
                 </Button>
-                <Button className="btnRes">
+                <Button variant="outline" _hover={{bgColor:"#7986CB"}}   className="btnRes">
                   <Link to="/signup">
                     <b>Sign Up</b>
                   </Link>
                 </Button>
                 
 
-                <Button className="btnRes">
+                <Button variant="outline" _hover={{bgColor:"#7986CB"}}   className="btnRes">
                   <Link to="/contact">
                     <b>Contact</b>
                   </Link>

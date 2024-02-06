@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 
 import Footer from './Components/Footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Signup from './Pages/AUTH/Signup.jsx';
+import Signup from './Pages/AUTH/Signup2.jsx';
 import Contact from './Pages/Contact.jsx';
 import Test from './Pages/testing/test.jsx';
 
