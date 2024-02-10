@@ -1,0 +1,18 @@
+.body{
+    overflow:hidden;
+
+}
+
+
+.container{
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    scale: 2;
+}
+
+.stellarium{
+    width: 150%;
+    height:150%;
+    overflow: hidden;
+}

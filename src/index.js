@@ -9,7 +9,7 @@ import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
 
 
-export const server = "https://quicker-notes-app-backend.vercel.app/api/v1";
+export const server = "https://localhost:5000/api/v1";
 
 export const Context = createContext({ isAuthenticated: false });
 const Appwrapper = () => {

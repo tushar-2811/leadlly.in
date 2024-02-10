@@ -22,8 +22,8 @@ const Home = () => {
     <>
    
     <div id="About" style={{height:"auto"}}>
-      <Box   h={{ base: "1300", sm: "1300", md: "1300px", lg: "650px"}} my={5}
-      bg={useColorModeValue("#F0F0EB", "gray.800")}
+      <Box   h={{ base: "1300", sm: "1300", md: "1300px", lg: "650px"}} py={5}
+      bg={useColorModeValue("#e8f0f9", "black.900")}
        w={"100vw"}>  
         <Flex h={"auto"} alignItems={"center"} justifyContent={"center"} flexWrap={"wrap"}>
         <Box h ={'600px'}

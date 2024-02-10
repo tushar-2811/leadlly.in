@@ -14,6 +14,7 @@ import {
   IconButton,
   Hide,
   background,
+  Image
 
 } from "@chakra-ui/react";
 import {
@@ -29,6 +30,7 @@ import "./Navbar.css";
 import { Navbar as Navbar_} from "@nextui-org/react";
 
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -46,7 +48,14 @@ export default function Navbar() {
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="42%">
-            <Name />
+           
+            <Image src={"./imgs/logos/logo1.png"}
+            boxSize = {"50px"}
+        
+            alt={"logo"}
+          
+
+            />
 
             <Show breakpoint="(min-width: 1000px)">
               {" "}

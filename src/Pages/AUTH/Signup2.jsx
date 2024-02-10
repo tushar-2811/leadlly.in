@@ -7,7 +7,7 @@ import Stepper from "./components/Stepper";
 import {Flex,Box,Spacer,Button, useColorModeValue,PinInput,PinInputField,HStack} from "@chakra-ui/react"
 import axios from "axios";
 import { Context ,server} from "../../index";
-
+import "./signup.css"
 
 
 export default function Signup() {
@@ -49,51 +49,47 @@ export default function Signup() {
               withCredentials: true,
             },
           );
-          toast.success(data.message);
+          console.log(data.message);
           setIsLoading(false);
           setIsAuthenticated(true);
         } catch (error) {
-          toast.error(error.response.data.message);
+          console.log(error)
           setIsAuthenticated(false);
           setIsLoading(false);
         }
       };
-      if (isAuthenticated) return <Navigate to={"/"} />;
+      
     
 
 
-    //   const handleSubmit = async (e) => {
+      const handleSubmit2 = async (e) => {
         
-    //     e.preventDefault();
-    //     if(!handleValidations()){
-    //       return;
-    //     }
-    //     setCurrentLevel((prevLevel) => prevLevel + 1);
-    // if(currentLevel===3){
-    //     try {
-    //       const response = await fetch('http://localhost:5000/api/v1/users/register', {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(formData),
-    //       });
-    //       console.log( JSON.stringify(formData));
-        
-    //       if (response.ok) {
-    //         console.log('Signup successful');
-    //         // Handle successful signup, e.g., redirect or display a success message
-    //       } else {
-    //         console.error('Signup failed');
-    //         // Handle signup failure, e.g., display an error message
-    //       }
-    //     } catch (error) {
-    //       console.error('Error during signup:', error);
-    //       // Handle error, e.g., display a generic error message
-    //     }
-    //   };}
+        e.preventDefault();
+        if(!handleValidations()){
+          return;
+        }
+        setCurrentLevel((prevLevel) => prevLevel + 1);
+    
+        try {
+          const response = await fetch('http://localhost:5000/api/v1/users/register', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+          
+          setIsLoading(false);
+          setIsAuthenticated(true);
+        } 
+        catch (error) {
+          console.log(error)
+          setIsAuthenticated(false);
+          setIsLoading(false);
+        }
+      };
 
-
+      if (isAuthenticated) return <Navigate to={"/"} />;
 
       
       
@@ -140,7 +136,7 @@ export default function Signup() {
                   value = {formData.name}
                   onChange = {handleChange}
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md  py-1.5 px-2  text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               
               </div>
