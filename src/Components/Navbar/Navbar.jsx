@@ -13,7 +13,7 @@ import {
   useDisclosure,
   IconButton,
   Hide,
-  background,
+  Divider,
   Image
 
 } from "@chakra-ui/react";
@@ -25,7 +25,6 @@ import {
   AddIcon,
 } from "@chakra-ui/icons";
 
-import Name from "./Name";
 import "./Navbar.css";
 import { Navbar as Navbar_} from "@nextui-org/react";
 
@@ -40,22 +39,26 @@ export default function Navbar() {
 
   return (
     <div id="navFix">
-      <Navbar_>
+      <Navbar_ maxWidth="full">
       <Box
         
-        px={9}
+        
         width={["100%"]}
       >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex h={16} w={"100%"} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="42%">
-           
+          <Link  to ="/">
+                    {" "}
+                    
+                    
             <Image src={"./imgs/logos/logo1.png"}
             boxSize = {"50px"}
         
             alt={"logo"}
-          
+            onclick = {onClose}
 
             />
+            </Link>
 
             <Show breakpoint="(min-width: 1000px)">
               {" "}
@@ -78,29 +81,34 @@ export default function Navbar() {
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
               >
-                <Button variant="outline" _hover={{bgColor:"#7986CB"}}  className="btnRes">
-                  <Link  to ="/">
-                    {" "}
-                    <b>Home</b>
-                    </Link>
-                </Button>
-
-                <Button variant="outline" _hover={{bgColor:"#7986CB"}} className="btnRes">
-                  <Link to="/test">
-                    <b>TestPage</b>
-                  </Link>
-                </Button>
-                <Button variant="outline" _hover={{bgColor:"#7986CB"}}   className="btnRes">
-                  <Link to="/signup">
-                    <b>Sign Up</b>
-                  </Link>
-                </Button>
                 
 
-                <Button variant="outline" _hover={{bgColor:"#7986CB"}}   className="btnRes">
-                  <Link to="/contact">
-                    <b>Contact</b>
+                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
+                  <Link to="/mentors">
+                    Our Mentors
                   </Link>
+                </Button>
+                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
+                  <Link to="/course-details">
+                    Courses
+                  </Link>
+                </Button>
+                <div className="divide-x-3">
+                <Button variant="none" className="px-4   py-1 hover:bg-indigo-300 text-xl font-mono ">
+                  <Link to="/signup">
+                    SignUp
+                  </Link>
+                </Button>
+                <Button variant="none" className="px-4  py-1 hover:bg-indigo-300 text-xl font-mono">
+               
+                <Link to="/login">
+                   Login
+                  </Link>
+                  </Button>
+                  </div>
+
+                <Button variant="none" _hover={{bgColor:"#7986CB"}}   className="btnRes">
+                  <Link to="/Courses"></Link>
                 </Button>
               </HStack>
             </HStack>
@@ -131,12 +139,17 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}/>
                 </DropdownTrigger>
                 <DropdownMenu aria-label="Example with disabled actions" disabledKeys={["edit", "delete"]}>
-                  <DropdownItem key="new">New file</DropdownItem>
-                  <DropdownItem key="copy">Copy link</DropdownItem>
-                  <DropdownItem key="edit">Edit file</DropdownItem>
-                  <DropdownItem key="delete" className="text-danger" color="danger">
-                    Delete file
-                  </DropdownItem>
+               
+                  <DropdownItem key="new" onClick={isOpen ? onClose : onOpen} ><Link to="/test">
+                    <b>TestPage</b>
+                  </Link></DropdownItem>
+                  <DropdownItem key="copy" onClick={isOpen ? onClose : onOpen}><Link to="/signup">
+                    <b>Sign Up</b>
+                  </Link></DropdownItem>
+                  <DropdownItem key="edit" onClick={isOpen ? onClose : onOpen}><Link to="/contact">
+                    <b>Contact</b>
+                  </Link></DropdownItem>
+                  
                 </DropdownMenu>
               </Dropdown>
           
