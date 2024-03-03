@@ -7,34 +7,22 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
-
+import { AuthProvider } from './Contexts/UserContext';
 
 export const server = "https://localhost:5000/api/v1";
 
-export const Context = createContext({ isAuthenticated: false });
+
+
 const Appwrapper = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [profile, setProfile] = useState({});
-  const [refresh, setRefresh] = useState(false);
-  const [sidebarWidth, setSidebarWidth] = useState("70px");
+
+
+
   return (
-    <Context.Provider
-      value={{
-        isAuthenticated,
-        setIsAuthenticated,
-        isLoading,
-        setIsLoading,
-        profile,
-        setProfile,
-        refresh,
-        setRefresh,
-        sidebarWidth,
-        setSidebarWidth,
-      }}
-    >
+
+    <AuthProvider>
       <App />
-    </Context.Provider>
+    </AuthProvider>
+
   );
 };
 

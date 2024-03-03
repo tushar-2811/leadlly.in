@@ -107,9 +107,7 @@ export default function Navbar() {
                   </Button>
                   </div>
 
-                <Button variant="none" _hover={{bgColor:"#7986CB"}}   className="btnRes">
-                  <Link to="/Courses"></Link>
-                </Button>
+                
               </HStack>
             </HStack>
           </Flex>

@@ -11,7 +11,7 @@ import Test from './Pages/testing/test.jsx';
 import Login from './Pages/AUTH/Login.jsx';
 import CourseDetails from './Pages/CourseDetails/CourseDetails.jsx';
 import Mentors from './Pages/Mentor/Mentors.jsx';
-
+import Specifications from './Pages/Sections/Specifications/Specifications.jsx'
 
 export default function App() {
   return (
@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/test" element={<Test />} />
         <Route path="/login" element={<Login />} />
         <Route path="/mentors" element={<Mentors />} />
+        <Route path="/specs" element={<Specifications />} />
       </Routes>
       <Footer />
     </BrowserRouter>

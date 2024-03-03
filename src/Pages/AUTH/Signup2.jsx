@@ -6,8 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Stepper from "./components/Stepper";
 import {Flex,Box,Spacer,Button, useColorModeValue,PinInput,PinInputField,HStack} from "@chakra-ui/react"
 import axios from "axios";
-import { Context ,server} from "../../index";
-
+import {server} from "../../index";
+import {useSignup} from "../../hooks/useSignup";
 
 
 export default function Signup() {
@@ -28,68 +28,56 @@ export default function Signup() {
         'OTP Verification' ,
         'Other Details' 
       ];
-      const { isAuthenticated, setIsAuthenticated, isLoading, setIsLoading } =
-    useContext(Context);
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        if(!handleValidations()){
-                return;
-              }
-              setCurrentLevel((prevLevel) => prevLevel + 1);
-
-        try {
-          const { data } = await axios.post(
-            `${server}/users/register`,
-            JSON.stringify(formData),
-            {
-              headers: {
-                "Content-Type": "application/json",
-              },
-              withCredentials: true,
-            },
-          );
-          console.log(data.message);
-          setIsLoading(false);
-          setIsAuthenticated(true);
-        } catch (error) {
-          console.log(error)
-          setIsAuthenticated(false);
-          setIsLoading(false);
-        }
-      };
       
-    
-
-
-      const handleSubmit2 = async (e) => {
+      // const handleSubmit = async (e) => {
+      //   e.preventDefault();
         
+      //   if(!handleValidations()){
+      //           return;
+      //         }
+      //         setCurrentLevel((prevLevel) => prevLevel + 1);
+
+      //   try {
+      //     const { data } = await axios.post(
+      //       `${server}/users/register`,
+      //       JSON.stringify(formData),
+      //       {
+      //         headers: {
+      //           "Content-Type": "application/json",
+      //         },
+      //         withCredentials: true,
+      //       },
+      //     );
+      //     console.log(data.message);
+        
+      //   } catch (error) {
+      //     console.log(error)
+        
+      //   }
+      // };
+      
+    const {Signup,isLoading,error}=useSignup()
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if(!handleValidations()){
           return;
         }
-        setCurrentLevel((prevLevel) => prevLevel + 1);
-    
-        try {
-          const response = await fetch('http://localhost:5000/api/v1/users/register', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
-          
-          setIsLoading(false);
-          setIsAuthenticated(true);
-        } 
-        catch (error) {
-          console.log(error)
-          setIsAuthenticated(false);
-          setIsLoading(false);
-        }
-      };
+        
 
-      if (isAuthenticated) return <Navigate to={"/"} />;
+        await Signup(formData).then(
+          setCurrentLevel((prevLevel) => prevLevel + 1))
+        
+    
+        if(error){
+          toast.error(error,toastOptions)
+        }
+        
+
+      }
+
+  
 
       
       
@@ -205,7 +193,7 @@ export default function Signup() {
               </Box>
               
               <Flex my={10} alignItems={"center"} justifyContent={"center"}>
-            <Button type="submit" w={"50%"} bgColor={"#7986CB"} colorScheme="white">Next</Button>
+            <Button disabled={isLoading} type="submit" w={"50%"} bgColor={"#7986CB"} colorScheme="white">Next</Button>
             </Flex>
           </form></Box></Flex>
           </>

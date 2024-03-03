@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Stepper from "./components/Stepper";
 import {Flex,Box,Spacer,Button, useColorModeValue,PinInput,PinInputField,HStack} from "@chakra-ui/react"
 import axios from "axios";
-import { Context ,server} from "../../index";
+import {server} from "../../index";
 
 export default function Login() {
     const [formData, setFormData] = useState({
@@ -19,21 +19,14 @@ export default function Login() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
 
-      const [currentLevel, setCurrentLevel] = useState(1);
-      const steps = [
-         'Contact Info' ,
-        'OTP Verification' ,
-        'Other Details' 
-      ];
-      const { isAuthenticated, setIsAuthenticated, isLoading, setIsLoading } =
-    useContext(Context);
+    
       const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsLoading(true);
+       
         if(!handleValidations()){
                 return;
               }
-              setCurrentLevel((prevLevel) => prevLevel + 1);
+             
 
         try {
           const { data } = await axios.post(
@@ -47,12 +40,10 @@ export default function Login() {
             },
           );
           console.log(data.message);
-          setIsLoading(false);
-          setIsAuthenticated(true);
+          
         } catch (error) {
           console.log(error)
-          setIsAuthenticated(false);
-          setIsLoading(false);
+         
         }
       };
       
@@ -65,7 +56,6 @@ export default function Login() {
         if(!handleValidations()){
           return;
         }
-        setCurrentLevel((prevLevel) => prevLevel + 1);
     
         try {
           const response = await fetch('http://localhost:5000/api/v1/users/register', {
@@ -76,17 +66,14 @@ export default function Login() {
             body: JSON.stringify(formData),
           });
           
-          setIsLoading(false);
-          setIsAuthenticated(true);
+         
         } 
         catch (error) {
           console.log(error)
-          setIsAuthenticated(false);
-          setIsLoading(false);
+        
         }
       };
 
-      if (isAuthenticated) return <Navigate to={"/"} />;
 
       
       
