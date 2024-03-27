@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function BouncyCardsFeatures(){
   return (
     <section className="mx-auto max-w-7xl px-4 py-12 text-slate-800">
-      <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">
+      {/* <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">
         <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
           Grow faster with our
           <span className="text-blue-400"> all in one solution</span>
@@ -18,7 +18,7 @@ export default function BouncyCardsFeatures(){
         >
           Learn more
         </motion.button>
-      </div>
+      </div> */}
       <div className="mb-4 grid grid-cols-12 gap-4">
       <motion.div className="col-span-12 md:col-span-4" 
        initial={{ opacity: 0, scale: 0.5 }}
@@ -66,7 +66,7 @@ export default function BouncyCardsFeatures(){
         <BounceCard className="col-span-12 md:col-span-4">
         <img src="./imgs/home/lonely.svg" alt="backlog" className="h-60 mx-auto" />
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-blue-100 to-indigo-200 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-          <CardTitle>which lead you to feel<br/><b> Lonely </b> </CardTitle>
+          <CardTitle>which leads you to feel<br/><b> Lonely </b> </CardTitle>
           </div>
         </BounceCard>
         </motion.div>

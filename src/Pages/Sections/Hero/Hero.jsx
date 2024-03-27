@@ -32,19 +32,19 @@ const Home = () => {
           base: "100vw",
           sm: "100vw",
           md: "100vw",
-          lg: "45vw", 
+          lg: "50vw", 
         }} bg={useColorModeValue("#e8f0f9", "gray.700")} >
-            <Heading p={0} w={"auto"} h={"auto"} fontSize={{base:"2.5rem",sm:"2.5rem",md:"3.5rem",lg:"4rem"}}>
-            your mind and career: Your personalized mentor awaits
-            </Heading>  </Center> <Center>
-            <Text  fontSize={"3xl"} w={{base:"90vw",sm:"90vw",md:"35vw",lg:"35vw"}}> Get your own <Typewriter
+            <Heading p={0} w={"auto"} h={"auto"}  fontSize={{base:"2.5rem",sm:"2.5rem",md:"3.5rem",lg:"4rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
     loop: true,
   }}
   
-/> to hold your hands</Text>
+/> to hold your hand
+           
+            </Heading>  </Center> <Center>
+            <Text  fontSize={"3xl"} w={{base:"90vw",sm:"90vw",md:"35vw",lg:"35vw"}}> We empower student with personalized mentorship and guidance</Text>
 
             </Center>
             <Center  display={{sm:"block",base:"block",md:"block",lg:"none"}}>

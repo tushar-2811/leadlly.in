@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {Typewriter} from 'typewriter-effect';
 import {
   Box,
   Flex,
@@ -25,7 +26,7 @@ import {
   AddIcon,
 } from "@chakra-ui/icons";
 
-import "./Navbar.css";
+import "./Navbar.css"
 import { Navbar as Navbar_} from "@nextui-org/react";
 
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
@@ -39,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div id="navFix">
-      <Navbar_ maxWidth="full">
+      <Navbar_ maxWidth="full" >
       <Box
         
         
@@ -85,7 +86,7 @@ export default function Navbar() {
 
                 <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
                   <Link to="/mentors">
-                    Our Mentors
+                  Our mentors
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
@@ -93,7 +94,7 @@ export default function Navbar() {
                     Courses
                   </Link>
                 </Button>
-                <div className="divide-x-3">
+                <HStack className="divide-x-3">
                 <Button variant="none" className="px-4   py-1 hover:bg-indigo-300 text-xl font-mono ">
                   <Link to="/signup">
                     SignUp
@@ -105,7 +106,7 @@ export default function Navbar() {
                    Login
                   </Link>
                   </Button>
-                  </div>
+                  </HStack>
 
                 
               </HStack>
