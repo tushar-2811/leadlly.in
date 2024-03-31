@@ -21,65 +21,49 @@ export default function BouncyCardsFeatures(){
         </motion.button>
       </div> */}
       <div className="mb-4 grid grid-cols-12 gap-4">
-      <motion.div className="col-span-12 md:col-span-5" 
-       initial={{ opacity: 0, scale: 0.5 }}
-       whileInView={{ opacity: 1, scale: 1 }}
-       transition={{ duration: 0.5 }}>
-        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-4 backdrop-blur-md`}
-      style={{ background: "url('./imgs/sections/backlogs.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}  >
-       
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tl from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+      <motion.div className="col-span-12 md:col-span-5 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(-40vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
           <CardTitle>
             Are you buried under the <b>backlogs,</b></CardTitle>
            
-          </div>
-        </motion.div>
-        </motion.div>
-
-        <motion.div className="col-span-12 md:col-span-7"
-       initial={{ opacity: 0, scale: 0.5 }}
-       whileInView={{ opacity: 1, scale: 1 }}
-      
-       transition={{ duration: 0.5 }}>
-        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-8 `}
-      style={{ background: "url('./imgs/sections/distractions.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
+    
         
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-          <CardTitle>bombarded by <br/> <b> Distractions </b>and feeling <b> isolated </b>and <b> unheard?</b></CardTitle>
-          </div>
         </motion.div>
-      </motion.div>
-      </div>
-      <div className="grid grid-cols-12 gap-4">
-        <motion.div className="col-span-12 md:col-span-7"
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}>
-        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-8 `}
-      style={{ background: "url('./imgs/sections/procastination.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
-       
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-          <CardTitle> Lacking a Proper<br/><b> Schedule</b> and <b>Procastinate</b>  a lot</CardTitle>
-          </div>
+        <motion.div className="col-span-12 md:col-span-7 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(50vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
+          <CardTitle>
+            bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </CardTitle>
+           
         </motion.div>
+        <motion.div className="col-span-12 md:col-span-7 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(-50vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
+          <CardTitle>
+            Lacking a proper <b>Schedule</b>and <br></br> <b>Procastinate </b>a lot</CardTitle>
+           
+    
+        
         </motion.div>
-        <motion.div className="col-span-12 md:col-span-5"
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}>
-        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-4 `}
-      style={{ background: "url('./imgs/sections/anxiety.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
-       
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-          <CardTitle>which only adds on the<b> anxiety!</b> </CardTitle>
-          </div>
+        <motion.div className="col-span-12 md:col-span-5 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(40vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
+          <CardTitle>
+            Which only adds on the <br/> <b>Anxiety</b></CardTitle>
+           
+    
+        
         </motion.div>
-        </motion.div>
-      </div>
+</div>
     </section>
   );
 };

@@ -25,7 +25,7 @@ const Home = () => {
       
       
       <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
-          my={"5vh"}
+          my={"5vh"} 
           
           
           
@@ -49,7 +49,7 @@ const Home = () => {
         <Center  h ={"auto"}
         rounded={"5vw"}
             >
-            <Heading zIndex={10} mr={"5rem"} fontFamily={"sans-serif"}  color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
+            <Heading fontWeight={"bold"} zIndex={10} mr={"5rem"} fontFamily={"Lato"} color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
