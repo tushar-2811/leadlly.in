@@ -26,7 +26,7 @@ export default function BouncyCardsFeatures(){
        whileInView={{ opacity: 1, scale: 1 }}
        transition={{ duration: 0.5 }}>
         <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-4 `}
+      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-4 backdrop-blur-md`}
       style={{ background: "url('./imgs/sections/backlogs.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}  >
        
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tl from-purple-200 to-rose-100 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -42,12 +42,14 @@ export default function BouncyCardsFeatures(){
        whileInView={{ opacity: 1, scale: 1 }}
       
        transition={{ duration: 0.5 }}>
-        <BounceCard className="col-span-12 md:col-span-8">
+        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-8 `}
+      style={{ background: "url('./imgs/sections/distractions.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
         
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tr from-slate-200 to-slate-600 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
           <CardTitle>bombarded by <br/> <b> Distractions </b>and feeling <b> isolated </b>and <b> unheard?</b></CardTitle>
           </div>
-        </BounceCard>
+        </motion.div>
       </motion.div>
       </div>
       <div className="grid grid-cols-12 gap-4">
@@ -55,23 +57,27 @@ export default function BouncyCardsFeatures(){
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}>
-        <BounceCard className=" overflow-hidden col-span-12 md:col-span-8">
-        <img src="./imgs/sections/procastination.jpg" alt="backlog" className="w-full mx-auto  rounded-2xl blur-sm" />
+        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-8 `}
+      style={{ background: "url('./imgs/sections/procastination.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
+       
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-tr from-slate-200 to-slate-600 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
           <CardTitle> Lacking a Proper<br/><b> Schedule</b> and <b>Procastinate</b>  a lot</CardTitle>
           </div>
-        </BounceCard>
+        </motion.div>
         </motion.div>
         <motion.div className="col-span-12 md:col-span-4"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}>
-        <BounceCard className="col-span-12 md:col-span-4">
-        <img src="./imgs/sections/anxiety.jpg" alt="backlog" className="w-full mx-auto  rounded-2xl blur-sm" />
+        <motion.div  whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 col-span-12 md:col-span-4 `}
+      style={{ background: "url('./imgs/sections/anxiety.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
+       
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-slate-200 to-slate-600 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
           <CardTitle>which only adds on the<b> anxiety!</b> </CardTitle>
           </div>
-        </BounceCard>
+        </motion.div>
         </motion.div>
       </div>
     </section>
