@@ -21,44 +21,43 @@ export default function BouncyCardsFeatures(){
         </motion.button>
       </div> */}
       <div className="mb-4 grid grid-cols-12 gap-4">
-      <motion.div className="col-span-12 md:col-span-5 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
-       initial={{ x:"calc(-40vh)" }}
-       whileInView={{ x:"0"}}
-       transition={{ duration: 0.5 }}
-       >
-          <CardTitle>
-            Are you buried under the <b>backlogs,</b></CardTitle>
-           
-    
-        
-        </motion.div>
-        <motion.div className="col-span-12 md:col-span-7 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
-       initial={{ x:"calc(50vh)" }}
-       whileInView={{ x:"0"}}
-       transition={{ duration: 0.5 }}
-       >
-          <CardTitle>
-            bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </CardTitle>
-           
-        </motion.div>
-        <motion.div className="col-span-12 md:col-span-7 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+      <motion.div className="col-span-12 md:col-span-5  h-[30vh] py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
        initial={{ x:"calc(-50vh)" }}
        whileInView={{ x:"0"}}
        transition={{ duration: 0.5 }}
        >
-          <CardTitle>
-            Lacking a proper <b>Schedule</b>and <br></br> <b>Procastinate </b>a lot</CardTitle>
+          <h3 className="mx-auto   text-slate-800 text-center text-3xl font-semibold">
+            Are you buried under the <b>backlogs,</b></h3>
            
     
         
         </motion.div>
-        <motion.div className="col-span-12 md:col-span-5 py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
-       initial={{ x:"calc(40vh)" }}
+        <motion.div className="col-span-12 md:col-span-7  h-[30vh] py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(50vh)" }}
        whileInView={{ x:"0"}}
        transition={{ duration: 0.5 }}
        >
-          <CardTitle>
-            Which only adds on the <br/> <b>Anxiety</b></CardTitle>
+          <h3 className="mx-auto   text-slate-800 text-center text-3xl font-semibold">
+            bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </h3>
+           
+        </motion.div>
+        <motion.div className="col-span-12 md:col-span-7 h-[30vh] py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(-50vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
+         <h3 className="mx-auto   text-slate-800 text-center text-3xl font-semibold">
+           Lacking a proper <b>Schedule</b> and <b>Procastinate</b> a lot </h3>
+           
+        </motion.div>
+        
+        <motion.div className="col-span-12 md:col-span-5 align-middle h-[30vh] py-15 translate-y-8 rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] " 
+       initial={{ x:"calc(50vh)" }}
+       whileInView={{ x:"0"}}
+       transition={{ duration: 0.5 }}
+       >
+          <h3 className="mx-auto   text-slate-800 text-center text-3xl font-semibold">
+            Which only adds on the <br/> <b>Anxiety</b></h3>
            
     
         
@@ -69,8 +68,3 @@ export default function BouncyCardsFeatures(){
 };
 
 
-const CardTitle = ({ children }) => {
-  return (
-    <h3 className="mx-auto  text-slate-800 text-center text-3xl font-semibold">{children}</h3>
-  );
-};

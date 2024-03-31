@@ -46,10 +46,9 @@ const Home = () => {
           md: "65vw",
           lg: "55vw", 
         }}>
-        <Center  h ={"auto"}
-        rounded={"5vw"}
+        <div className=" rounded-xl font-sans px-[5vw]"
             >
-            <Heading fontWeight={"bold"} zIndex={10} mr={"5rem"} fontFamily={"Lato"} color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
+            <Heading fontWeight={"bold"} zIndex={10}   color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
@@ -58,9 +57,9 @@ const Home = () => {
   
 /> to hold your hand
            
-            </Heading>  </Center> <Center>
-            <Text color={"black"} zIndex={10} mr={"10vw"} fontSize={"1rem"} w={"70%"}>We equip students with personalized learning tools and supportive mentors to conquer academic challenges and thrive in competitive exams </Text>
-            </Center>
+            </Heading>  </div> <div>
+            < h4 className="text-[1rem] px-[5vw]  md:w-[70%] "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
+            </div>
             
 
       

@@ -10,39 +10,39 @@ export default function WhyUs() {
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
        
-        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><h2 className='font-bold text-[1.5rem] mt-[50%] text-indigo-600 ' > Don't Stress!</h2><p>we got your back with leadly's powerful learning suite:</p></motion.div>
+        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><h2 className='font-bold text-[1.5rem]  text-indigo-600 ' > Don't Stress!</h2><p className='text-[0.8rem]'>we got your back with leadly's powerful learning suite:</p></motion.div>
 
 
 <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
        
-        transition={{ duration: 0.9}} className='relative col-span-6 bg-[#faf8fe] row-span-4 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[1.5rem] mt-[10%] font-mono ml-5 font-semibold font-sans' > Mentorship& Guidance Session</h2><p className='px-4 text-xl'>guided learning journey</p>
+        transition={{ duration: 0.9}} className='relative col-span-6 bg-[#faf8fe] row-span-4 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
+          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[1%] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-1 text-[0.9rem]'>guided learning journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         
 
           <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         
-        transition={{ duration: 0.5 }}  className='relative col-span-6  bg-[#faf8fe] row-span-1 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[1.2rem] mt-[7%] font-mono ml-5 font-semibold font-sans' >Workshops</h2><p></p>
+        transition={{ duration: 0.5 }}  className='relative col-span-6  bg-[#faf8fe] row-span-1 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
+          <h2 className='text-[1.2rem] mt-[7%] leading-tight ml-2 font-bold font-sans' >Workshops</h2><p></p>
         <img src="./imgs/sections/Group 165 1.png" className='absolute w-[25%] right-[1.5vw] bottom-0   h-auto '></img> </motion.div>
        
 
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         
-        transition={{ duration: 0.7 }} className='relative col-span-6 bg-[#faf8fe]  row-span-3 rounded-2xl ring-2 ring-purple-100 ring-offset-2 '>
-           <h2 className='text-[1.5rem] mt-[5%] font-mono ml-5 font-bold font-sans' > Revision<br></br> Tracker</h2><p className='px-4'>Stay on top of<br/> your revision</p>
-        <img src="./imgs/sections/Group 162 1.png" className='absolute w-[55%] left-[40%] bottom-0   h-auto '></img> </motion.div>
+        transition={{ duration: 0.7 }} className='relative col-span-6 bg-[#faf8fe]  row-span-3 rounded-xl ring-2 ring-purple-100 ring-offset-2 '>
+           <h2 className='text-[1.4rem] mt-[5%] leading-tight  ml-2 font-bold font-sans' > Revision<br></br> Tracker</h2><p className='px-2 text-[0.8rem]'>Stay on top of<br/> your revision</p>
+        <img src="./imgs/sections/Group 162 1.png" className='absolute w-[50%] right-0 bottom-0   h-auto '></img> </motion.div>
          
 
         
          <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.10 }}
-        transition={{ duration: 1 }} className='relative col-span-6 bg-[#faf8fe] row-span-2 my-3 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[1.2rem] mt-[5%] font-mono ml-5 font-semibold font-sans' > Error Book </h2><p className='px-4'></p>
+        transition={{ duration: 1 }} className='relative col-span-6 bg-[#faf8fe] row-span-2 my-3 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
+          <h2 className='text-[1.2rem] mt-[25%] leading-tight  ml-2 font-bold font-sans' > Error Book </h2><p className='px-1 text-[0.8rem]'>embrace your mistake</p>
           <img src="./imgs/sections/Group 163.png" className='absolute w-[30%] right-0 top-0  h-auto '></img> </motion.div>
        
         
@@ -51,16 +51,16 @@ export default function WhyUs() {
          <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.10 }}
-        transition={{ duration: 0.7 }} className='relative col-span-12 bg-[#faf8fe] row-span-3 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[2rem] mt-[10%] font-mono ml-5 font-semibold font-sans' > Personalized<br/> Planner</h2><p className='px-4 text-xl'>Crafting your roadmap</p>
+        transition={{ duration: 0.7 }} className='relative col-span-12 bg-[#faf8fe] row-span-3 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
+          <h2 className='text-[2rem] mt-[5%]  ml-5  font-bold font-sans leading-tight' > Personalized<br/> Planner</h2><p className='px-5 text-[1rem]'>Crafting your roadmap</p>
           <img src="./imgs/sections/Group 164.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img></motion.div>
         
 
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         
-        transition={{ duration: 0.6 }} className='relative  col-span-12 bg-[#faf8fe] row-span-3 rounded-2xl ring-2 ring-purple-100 ring-offset-2 '>
-          <h2 className='text-[2rem] mt-[10%] font-mono ml-5 font-semibold font-sans' > Growth<br/> Meter</h2><p className='text-xl px-4'>Track your progress</p>
+        transition={{ duration: 0.6 }} className='relative  col-span-12 bg-[#faf8fe] row-span-3 rounded-xl ring-2 ring-purple-100 ring-offset-2 '>
+          <h2 className='text-[2rem] mt-[5%]  ml-5 font-bold leading-tight font-sans' > Growth<br/> Meter</h2><p className='text-[1rem] px-4'>Track your progress</p>
           <img src="./imgs/sections/Group 166 2 1.png" className='absolute w-[35%] right-0 bottom-0   h-auto '></img> </motion.div>
           </div>   
          

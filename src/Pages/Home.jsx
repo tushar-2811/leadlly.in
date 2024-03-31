@@ -18,7 +18,7 @@ export default function Home() {
       
       <WhyUs/>
       <Testimonial/>
-      <OurMentors/>
+      
       
 
     </div>
