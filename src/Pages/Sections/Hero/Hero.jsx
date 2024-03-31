@@ -21,20 +21,39 @@ const Home = () => {
     <>
         
     <div id="About" style={{height:"auto",overflow:"hidden"}} >
-      <Flex  h={"auto"}  overflow={"hidden"} py={5}
-      
-      bg={useColorModeValue("#e8f0f9", "black.900")}
-       w={"100vw"}>  
 
-        <Flex h={"auto"} direction={"column"}  alignItems={"center"} justifyContent={"center"} flexWrap={"wrap"}>
-        <Center p={"2rem"} h ={"auto"}
-           w ={{
-          base: "100vw",
-          sm: "100vw",
-          md: "100vw",
-          lg: "50vw", 
-        }} bg={useColorModeValue("#e8f0f9", "gray.700")} >
-            <Heading p={0} w={"auto"} h={"auto"}  fontSize={{base:"2.5rem",sm:"2.5rem",md:"3.5rem",lg:"4rem"}}>Get your own <Typewriter
+      <div className ="absolute top-10 left-0">
+      <Image src={"./imgs/home/backimg1.png"} h={"auto"}
+          ></Image>
+
+      </div>
+      
+      <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
+          my={"5vh"}
+          
+          
+          
+      
+      
+      backdropBlur={"5px"}
+       w={{base: "90vw",
+       sm: "90vw",
+       md: "90vw",
+       lg: "90vw", }}>  
+
+
+        <Flex h={"auto"} py={"5vh"} direction={"column"} bg={useColorModeValue("#f9f2ff", "gray.700")}  justifyContent={"center"} flexWrap={"wrap"}
+        rounded={"5vw"}
+        w ={{
+          base: "90vw",
+          sm: "90vw",
+          md: "65vw",
+          lg: "55vw", 
+        }}>
+        <Center  h ={"auto"}
+        rounded={"5vw"}
+            >
+            <Heading zIndex={10} mr={"5rem"} fontFamily={"sans-serif"}  color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
@@ -44,31 +63,22 @@ const Home = () => {
 /> to hold your hand
            
             </Heading>  </Center> <Center>
-            <Text  fontSize={"3xl"} w={{base:"90vw",sm:"90vw",md:"35vw",lg:"35vw"}}> We empower student with personalized mentorship and guidance</Text>
-
+            <Text color={"black"} zIndex={10} mr={"10vw"} fontSize={"1rem"} w={"70%"}>We equip students with personalized learning tools and supportive mentors to conquer academic challenges and thrive in competitive exams </Text>
             </Center>
-            <Center  display={{sm:"block",base:"block",md:"block",lg:"none"}}>
-              <Button variant="outline" rounded={"full"} px="30%" _hover={{bgColor:"purple.300"}}   >
-                  <Link to="/signup">
-                    Get Started
-                  </Link>
-                </Button></Center>
+            
 
       
         </Flex>
 
-        <Flex display={{sm:"none",base:"none",md:"none",lg:"flex"}} direction ={"column"} justifyContent={"center"}
+        <Flex display={{sm:"none",base:"none",md:"flex",lg:"flex"}} direction ={"column"} justifyContent={"center"}
         
         >
           <Center>
-          <Image my={"20px"} src={"./imgs/home/learn.svg"} w="100%" h={"auto"}
+          <Image my={"20px"} src={"./imgs/home/onlinelearning.svg"} h={"40vh"} mx={"auto"} w={"auto"}
           ></Image>
           </Center>
-          <Center><Button variant="outline" rounded={"full"} px="10%" _hover={{bgColor:"purple.300"}}   >
-                  <Link to="/signup">
-                    Get Started
-                  </Link>
-                </Button></Center>
+          
+         
         </Flex>
       </Flex>
 

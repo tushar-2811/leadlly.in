@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/imgs/nature/1.jpg",
-  "/imgs/nature/2.jpg",
-  "/imgs/nature/3.jpg",
-  "/imgs/nature/4.jpg",
-  "/imgs/nature/5.jpg",
-  "/imgs/nature/6.jpg",
-  "/imgs/nature/7.jpg",
+  "/imgs/home/call.svg",
+  "/imgs/home/analysis.svg",
+  "/imgs/home/brainstroming.svg",
+  "/imgs/home/exams.svg",
+  "/imgs/home/learn.svg",
+  "/imgs/home/lonely.svg",
+  "/imgs/home/distraction.svg",
 ];
 
 const ONE_SECOND = 1000;
@@ -54,8 +54,8 @@ export const SwipeCarousel = () => {
     }
   };
 
-  return (
-    <div className="relative overflow-hidden bg-neutral-950 py-8">
+  return (<div className="flex w-screen">
+    <div className="relative overflow-hidden w-full  rounded-2xl  py-4">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -78,6 +78,11 @@ export const SwipeCarousel = () => {
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
       <GradientEdges />
     </div>
+    <div className="flex w-full">
+
+    </div>
+
+    </div>
   );
 };
 
@@ -97,7 +102,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover"
+            className="aspect-video w-[60%] mx-[20%] shrink-0 rounded-xl bg-neutral-200 object-cover"
           />
         );
       })}

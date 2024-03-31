@@ -39,8 +39,8 @@ export default function Navbar() {
   
 
   return (
-    <div id="navFix">
-      <Navbar_ maxWidth="full" >
+    <div id="navFix" className="flex h-30 rounded-2xl  mx-auto ">
+      <Navbar_ maxWidth="full" className="rounded-2xl h-12 mt-5 shadow-xl ring-slate-200 ring-2 ring-offset-2" >
       <Box
         
         
@@ -53,7 +53,7 @@ export default function Navbar() {
                     
                     
             <Image src={"./imgs/logos/logo1.png"}
-            boxSize = {"50px"}
+            boxSize = {"30px"}
         
             alt={"logo"}
             onclick = {onClose}
@@ -77,6 +77,8 @@ export default function Navbar() {
             /> */}
             <HStack spacing={8} alignItems={"center"}>
               <HStack
+                bg={useColorModeValue("#e8f0f9","gray-700" )}
+                rounded={20}
                 as={"nav"}
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
@@ -94,19 +96,11 @@ export default function Navbar() {
                     Courses
                   </Link>
                 </Button>
-                <HStack className="divide-x-3">
-                <Button variant="none" className="px-4   py-1 hover:bg-indigo-300 text-xl font-mono ">
-                  <Link to="/signup">
-                    SignUp
+                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
+                  <Link to="/course-details">
+                    Become a Mentor
                   </Link>
                 </Button>
-                <Button variant="none" className="px-4  py-1 hover:bg-indigo-300 text-xl font-mono">
-               
-                <Link to="/login">
-                   Login
-                  </Link>
-                  </Button>
-                  </HStack>
 
                 
               </HStack>

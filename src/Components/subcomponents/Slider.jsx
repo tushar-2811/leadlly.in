@@ -38,6 +38,7 @@ const HorizontalScrollCarousel = () => {
     <section ref={targetRef} className="relative h-[300vh] bg-blue-50">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
+          
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
@@ -51,7 +52,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-gradient-to-br rounded-3xl from-indigo-300 to-blue-200"
+      className="group relative h-[300px] w-[300px]  md:h-[450px] md:w-[450px] overflow-hidden bg-gradient-to-br rounded-3xl from-indigo-300 to-blue-200"
     >
       <div
         style={{
@@ -62,13 +63,15 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 backdrop-blur-lg grid place-content-center  ">
-        <div className=" bg-blue-100 rounded-xl h-auto w-3/4 mx-auto rounded-xl">
-        <p className="  px-8 py-4 mx-auto text-2xl text-center font-black uppercase text-purple-400">
+        <div className=" bg-blue-100  h-auto my-auto w-3/4 mx-auto rounded-xl">
+        <p className="  px-8 py-4 mx-auto text-md md:text-2xl text-center font-black uppercase text-purple-400">
           {card.title}
         </p>
-        <p className=" text-lg text-center mx-8 mb-4 font-black text-slate-700 ">
+        <p className=" text-sm md:text-lg text-center mb-4 mx-4 font-black text-slate-700 ">
           {card.para}
-        </p></div>
+        </p>
+        
+        </div>
       </div>
     </div>
   );
@@ -79,7 +82,7 @@ const cards = [
   {
     url: "/imgs/home/schedule.svg",
     title: "personalized guidance",
-    para:"talk about your daily problems with your mentor who lead you in righ path",
+    para:"talk about your daily problems with your mentor who lead you in righ path Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum esse unde dolores exercitationem, ullam pariatur corporis adipisci at impedit blanditiis  ",
     id: 1,
   },
   {
