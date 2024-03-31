@@ -83,6 +83,7 @@ export default function Navbar() {
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
+                mx={"5vw"}
               >
                 
 
@@ -109,17 +110,7 @@ export default function Navbar() {
 
           
 
-          <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
-              
-              
-             
-            </Stack>
-          </Flex>
+          
           
           
               <Dropdown >

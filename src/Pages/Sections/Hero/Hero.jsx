@@ -22,11 +22,7 @@ const Home = () => {
         
     <div id="About" style={{height:"auto",overflow:"hidden"}} >
 
-      <div className ="absolute top-10 left-0">
-      <Image src={"./imgs/home/backimg1.png"} h={"auto"}
-          ></Image>
-
-      </div>
+      
       
       <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
           my={"5vh"}
@@ -74,7 +70,7 @@ const Home = () => {
         
         >
           <Center>
-          <Image my={"20px"} src={"./imgs/home/onlinelearning.svg"} h={"40vh"} mx={"auto"} w={"auto"}
+          <Image my={"20px"} src={"./imgs/home/onlinelearning.svg"} h={"40vh"} mx={"3vw"} w={"auto"}
           ></Image>
           </Center>
           
