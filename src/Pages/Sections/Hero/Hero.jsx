@@ -22,7 +22,7 @@ const Home = () => {
         
     <div id="About" style={{height:"auto",overflow:"hidden"}} >
 
-      
+      <div className="absolute top-[5vh] z-0"><img className="h-[48vh] "  src="./imgs/home/backimg1.png"></img></div>
       
       <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
           my={"5vh"} 
@@ -38,7 +38,7 @@ const Home = () => {
        lg: "90vw", }}>  
 
 
-        <Flex h={"auto"} py={"5vh"} direction={"column"} bg={useColorModeValue("#f9f2ff", "gray.700")}  justifyContent={"center"} flexWrap={"wrap"}
+        <Flex h={"auto"} py={"5vh"} zIndex={5} opacity={1}   direction={"column"}  backdropBlur={"5px"} bg={useColorModeValue("#f9f2ff", "gray.700")}  justifyContent={"center"} flexWrap={"wrap"}
         rounded={"5vw"}
         w ={{
           base: "90vw",
@@ -48,7 +48,7 @@ const Home = () => {
         }}>
         <div className=" rounded-xl font-sans px-[5vw]"
             >
-            <Heading fontWeight={"bold"} zIndex={10}   color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
+            <Heading fontWeight={"bold"}  opacity={1} zIndex={10}  color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,

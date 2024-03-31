@@ -3,7 +3,7 @@ import React from 'react';
 const ComponentName = () => {        
     return (
         <div >
-             <h2 className="ml-5 md:ml-[8vw] text-4xl font-bold font-sans text-purple-950 md:text-5xl">
+             <h2 className="ml-5 md:ml-[8vw] text-4xl font-bold font-sans text-[#5900D9] md:text-5xl">
           Hear from our<br/>
           <span className="text-purple-400"> Happy Learners</span>
         </h2>

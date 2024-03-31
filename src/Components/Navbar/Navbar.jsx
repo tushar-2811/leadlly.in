@@ -77,7 +77,7 @@ export default function Navbar() {
             /> */}
             <HStack spacing={8} alignItems={"center"}>
               <HStack
-                bg={useColorModeValue("#e8f0f9","gray-700" )}
+                bg={useColorModeValue("purple.100","gray-700" )}
                 rounded={20}
                 as={"nav"}
                 spacing={4}
@@ -87,17 +87,13 @@ export default function Navbar() {
               >
                 
 
-                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
-                  <Link to="/mentors">
-                  Our mentors
-                  </Link>
-                </Button>
-                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
+                
+                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
                   <Link to="/course-details">
-                    Courses
+                    Contact Us
                   </Link>
                 </Button>
-                <Button variant="none"  className="text-3xl font-mono hover:bg-indigo-300">
+                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
                   <Link to="/course-details">
                     Become a Mentor
                   </Link>
