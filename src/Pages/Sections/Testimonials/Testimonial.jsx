@@ -3,6 +3,10 @@ import React from 'react';
 const ComponentName = () => {        
     return (
         <div >
+             <h2 className="ml-5 md:ml-[8vw] text-4xl font-bold font-sans text-purple-950 md:text-5xl">
+          Hear from our<br/>
+          <span className="text-purple-400"> Happy Learners</span>
+        </h2>
        <div className='flex flex-wrap flex-row w-full h-auto py-10 justify-center' >
         
        <div className='flex flex-col justify-center '>
