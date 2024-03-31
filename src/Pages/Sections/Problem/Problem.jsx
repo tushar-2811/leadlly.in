@@ -26,7 +26,7 @@ export default function BouncyCardsFeatures(){
        transition={{ duration: 0.5 }}
        >
           <h3 className="mx-auto py-10  text-slate-800 text-center text-3xl font-semibold">
-            bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </h3>
+            Bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </h3>
            
         </motion.div>
         <motion.div className="col-span-12 md:col-span-7 row-span-3 md:row-span-6 py-15  rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 " 

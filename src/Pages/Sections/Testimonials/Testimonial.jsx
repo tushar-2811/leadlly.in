@@ -3,12 +3,35 @@ import React from 'react';
 const ComponentName = () => {        
     return (
         <div >
-       <div className='grid grid-col-12 grid-row-12 bg-[#fefbff] w-[100vw] ' >
-       
-        <div className='col-span-6 row-span-4 h-[40vh] bg-transparent bg-opacity-50 backdrop-blur-lg z-10' ></div>
-
+       <div className='flex flex-wrap flex-row w-full h-auto py-10 justify-center' >
         
-       </div></div>
+       <div className='flex flex-col justify-center '>
+        <div className='ring-2 ring-pink-50 rounded-b-2xl rounded-t-md ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+            <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate animi! Tenetur consectetur at asperiores reiciendis tempore aliquam in fuga ullam. Aut eveniet sit ratione atque optio ea aliquid ducimus?</h3>
+            <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
+        </div>
+        <div className='ring-2 ring-pink-50 rounded-b-2xl rounded-t-md ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+            <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate animi! Tenetur consectetur at asperiores reiciendis tempore aliquam in fuga ullam. Aut eveniet sit ratione atque optio ea aliquid ducimus?</h3>
+            <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
+        </div>
+       </div>
+       <div className='flex flex-col  justify-center'>
+       <div className='ring-2 ring-pink-50 rounded-b-2xl rounded-t-md ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+            <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate animi! Tenetur consectetur at asperiores reiciendis tempore aliquam in fuga ullam. Aut eveniet sit ratione atque optio ea aliquid ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ducimus quam provident repellendus est itaque quisquam suscipit porro eligendi praesentium. Totam doloribus perspici</h3>
+            <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
+        </div>
+        </div>
+       <div className='flex flex-col '>
+       <div className='ring-2 ring-pink-50 rounded-b-2xl rounded-t-md ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+            <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate animi! Tenetur consectetur at asperiores reiciendis tempore aliquam in fuga ullam. Aut eveniet sit ratione atque optio ea aliquid ducimus?</h3>
+            <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
+        </div>
+        <div className='ring-2 ring-pink-50 rrounded-b-2xl rounded-t-md ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+            <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate animi! Tenetur consectetur at asperiores reiciendis tempore aliquam in fuga ullam. Aut eveniet sit ratione atque optio ea aliquid ducimus?</h3>
+            <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
+        </div></div>
+       </div>
+       </div>
 
     )
 }
