@@ -104,7 +104,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.5 }}  className='relative md:col-span-3  bg-[#faf8fe] md:row-span-3 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[2.2vw] mt-[7%] font-mono ml-5 leading-tight font-bold font-sans' >Workshops</h2><p></p>
+          <h2 className='text-[2.2vw] mt-[7%] font-mono ml-5 leading-tight font-bold font-sans' >Workshops</h2><p className='ml-5 text-[0.9rem]'>Ignite your Expertise</p>
         <img src="./imgs/sections/Group 165 1.png" className='absolute w-[25%] right-[1.5vw] bottom-0   h-auto '></img> </motion.div>
         
         
@@ -113,13 +113,13 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
        
         transition={{ duration: 0.9}} className='relative md:col-span-3 bg-[#faf8fe] md:row-span-6 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[2.5vw] mt-[1vw] font-mono leading-tight ml-5 font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-4 ml-5 text-xl'>guided learning journey</p>
+          <h2 className=' text-[2.5vw] mt-[1vw] font-mono leading-tight ml-5 font-bold font-sans' > Mentorship& Guidance Session</h2><p className=' ml-5 text-xl'>guided learning journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 1 }} className='relative md:col-span-3 bg-[#faf8fe] md:row-span-6 my-10 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[3vw] mt-[40%] font-mono ml-5 leading-tight font-bold font-sans' > Error Book </h2><p className='px-4 ml-5'>embrace your mistake</p>
+          <h2 className='text-[3vw] mt-[40%] font-mono ml-5 leading-tight font-bold font-sans' > Error Book </h2><p className=' ml-5'>embrace your mistake</p>
           <img src="./imgs/sections/Group 163.png" className='absolute w-[50%] right-0 top-0  h-auto '></img> </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
