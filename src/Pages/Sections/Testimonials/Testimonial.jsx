@@ -74,7 +74,7 @@ const ComponentName = () => {
 
 
 
-       <div className="hidden md:flex" >
+       <div className="hidden md:block" >
              <h2 className="ml-5 md:ml-[8vw] text-4xl font-bold font-sans text-[#5900D9] md:text-5xl">
           Lets hear from our<br/>
           <span className="text-purple-400"> Happy Learners...</span>
