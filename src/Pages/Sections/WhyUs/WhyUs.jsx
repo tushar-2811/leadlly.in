@@ -11,7 +11,7 @@ export default function WhyUs() {
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
        
-        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><p className='text-bold text-[1rem]'>we got your back with leadly's <br /> powerful learning suite:</p></motion.div>
+        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><p className='font-lato font-bold p-4 text-[1rem]'>we got your back with leadly's  powerful learning suite:</p></motion.div>
 
 
 <motion.div initial={{ opacity: 0, scale: 0.5 }}

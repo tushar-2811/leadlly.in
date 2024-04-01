@@ -19,12 +19,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/course-details" element={<CourseDetails />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/mentors" element={<Mentors />} />
-        <Route path="/specs" element={<Specifications />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
