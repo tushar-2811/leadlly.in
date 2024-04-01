@@ -23,7 +23,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
        
         transition={{ duration: 0.5 ,delay:0.2}} className='relative col-span-6 bg-[#faf8fe] row-span-4 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[3] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-3 text-[0.9rem]'>guided learning <br /> journey</p>
+          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-1 font-bold font-sans' > Mentorship& Guidance Session</h2><p className='mx-1 text-[0.9rem]'>guided learning <br /> journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         
 
@@ -31,7 +31,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.5,delay:0.2 }}  className='relative col-span-6  bg-[#faf8fe] row-span-1 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[1.2rem] mt-[7%] leading-tight ml-2 font-bold font-sans' >Workshops</h2><p className='px-2 text-[0.7rem]'>Ignite your expertise</p>
+          <h2 className='text-[1.2rem] mt-[3%] leading-tight ml-1 font-bold font-sans' >Workshops</h2><p className='px-1 text-[0.7rem]'>Ignite your expertise</p>
         <img src="./imgs/sections/Group 165 1.png" className='absolute w-[25%] right-[1.5vw] bottom-0   h-auto '></img> </motion.div>
        
 
@@ -39,7 +39,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.6 ,delay:0.2 }} className='relative col-span-6 bg-[#faf8fe]  row-span-3 rounded-xl ring-2 ring-purple-100 ring-offset-2 '>
-           <h2 className='text-[1.4rem] mt-[5%] leading-tight  ml-2 font-bold font-sans' > Revision<br></br> Tracker</h2><p className='px-5 text-[0.8rem]'>Stay on top of<br/> your revision</p>
+           <h2 className='text-[1.4rem] mt-[5%] leading-tight  ml-2 font-bold font-sans' > Revision<br></br> Tracker</h2><p className='px-2 text-[0.8rem]'>Stay on top of<br/> your revision</p>
         <img src="./imgs/sections/Group 162 1.png" className='absolute w-[50%] right-0 bottom-0   h-auto '></img> </motion.div>
          
 
@@ -48,7 +48,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.7,delay:0.2 }} className='relative col-span-6 bg-[#faf8fe] row-span-2 my-3 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[1.2rem] mt-[20%] leading-tight  ml-2 font-semibold font-sans' > Error Book </h2><p className='px-5 text-[0.8rem]'>embrace your mistake</p>
+          <h2 className='text-[1.2rem] mt-[20%] leading-tight  ml-2 font-semibold font-sans' > Error Book </h2><p className='mx-2 text-[0.8rem]'>embrace your mistake</p>
           <img src="./imgs/sections/Group 163.png" className='absolute w-[30%] right-0 top-0  h-auto '></img> </motion.div>
        
         
@@ -66,7 +66,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.8 ,delay:0.5 }} className='relative  col-span-12 bg-[#faf8fe] row-span-3 rounded-xl ring-2 ring-purple-100 ring-offset-2 '>
-          <h2 className='text-[2rem] mt-[5%]  ml-5 font-semibold leading-tight font-sans' > Growth<br/> Meter</h2><p className='text-[1rem]  px-4'>Track your progress</p>
+          <h2 className='text-[2rem] mt-[5%]  ml-5 font-semibold leading-tight font-sans' > Growth<br/> Meter</h2><p className='text-[1rem]  mx-5'>Track your progress</p>
           <img src="./imgs/sections/Group 166 2 1.png" className='absolute w-[35%] right-0 bottom-0   h-auto '></img> </motion.div>
           </div>   
          
