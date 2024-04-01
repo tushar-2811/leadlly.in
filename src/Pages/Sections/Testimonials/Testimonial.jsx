@@ -100,10 +100,10 @@ After all, under his guidance I have seen good changes in my schedule and in m
         </div>
        </motion.div>
        <motion.div className='flex flex-col justify-center '
-       initial={{y:"50%" ,opacity:0}}
+       initial={{y:"30%" ,opacity:0}}
        whileInView={{y:"0% ",opacity:1}}
        
-       transition={{duration:0.5,ease:"easeInOut"}}>
+       transition={{duration:0.4,ease:"easeInOut"}}>
        <div className='ring-2 ring-pink-50 rounded-b-2xl rounded-t-md md:rounded-2xl ring-offset-2 shadow-xl shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
             <h3 className='text-[1rem] text-indigo-950 font-sans p-1'>Talking about revision tracker and planners both these things helped me a lot and nearly stopped all my procrastination and anxiousness. And my mentor was Saumya didi. She is really helpful and relatable. She never disappoint me in her responses and I've tried doing what she told me to do and it has helped significantly in my process of learning better.</h3>
             <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
