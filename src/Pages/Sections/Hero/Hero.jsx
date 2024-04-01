@@ -3,6 +3,9 @@ import {Box,Center ,Spacer,Stack,Flex ,Text,Heading,useColorModeValue ,Image, ex
 import Typewriter from 'typewriter-effect';
 
 import { Link } from "react-router-dom";
+
+
+
 const breakpoints = {
   base: "0px",
   sm: "320px",
@@ -46,9 +49,9 @@ const Home = () => {
           md: "65vw",
           lg: "55vw", 
         }}>
-        <div className=" rounded-xl font-sans px-[5vw]"
+        <div className=" rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans px-[5vw]"
             >
-            <Heading fontWeight={"bold"}  opacity={1} zIndex={10}  color={"#5900d9"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
+            <Heading fontWeight={"bold"}  opacity={1} zIndex={10}  color={"transparent"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
