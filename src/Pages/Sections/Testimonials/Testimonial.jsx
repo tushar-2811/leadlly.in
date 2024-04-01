@@ -12,7 +12,7 @@ const ComponentName = () => {
        <div className='flex flex-col justify-center '
        >
         <motion.div
-        initial={{y:"80%" ,opacity:0}}
+        initial={{y:"50%" ,opacity:0}}
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5 ,ease:"easeInOut"}}
 
@@ -23,7 +23,7 @@ const ComponentName = () => {
             <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
         </motion.div>
         <motion.div
-        initial={{y:"80%" ,opacity:0}}
+        initial={{y:"50%" ,opacity:0}}
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5,ease:"easeInOut"}}
 
@@ -38,7 +38,7 @@ After all, under his guidance I have seen good changes in my schedule and in m
        
        >
        <motion.div
-        initial={{y:"80%" ,opacity:0}}
+        initial={{y:"50%" ,opacity:0}}
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5,ease:"easeInOut"}}
 
@@ -50,7 +50,7 @@ After all, under his guidance I have seen good changes in my schedule and in m
         <div className='flex flex-col justify-center '
        >
        <motion.div
-        initial={{y:"80%" ,opacity:0}}
+        initial={{y:"50%" ,opacity:0}}
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5,ease:"easeInOut"}}
 
@@ -59,7 +59,7 @@ After all, under his guidance I have seen good changes in my schedule and in m
             <p className=' text-[0.8rem] indent-[50%] font-sans p-1'>~ davinder singh</p>
         </motion.div>
         <motion.div
-        initial={{y:"80%" ,opacity:0}}
+        initial={{y:"50%" ,opacity:0}}
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5,ease:"easeInOut"}}
 
