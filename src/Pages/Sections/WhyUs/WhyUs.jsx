@@ -74,10 +74,10 @@ export default function WhyUs() {
       {/* for computer */}
       
       <motion.div 
-      initial={{ opacity: 0,scale:0.5 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5,ease:"easeInOut" }}
-       className='md:block hidden bg-gradient-to-r bg-clip-text from-[#5900d9] - bg-purple-400  ' ><h2 className='font-bold mx-[10%] text-[5rem] mt-10  text-transparent ' > Don't Stress!</h2></motion.div>
+      initial={{ opacity: 0, scale:0.5 }}
+      whileInView={{ opacity: 1,scale:1 }}
+      transition={{ duration: 1,ease:"easeInOut" }}
+       className='md:block w-[60vw] hidden bg-gradient-to-r bg-clip-text  mt-10 from-[#5900d9] - bg-purple-400  ' ><h2 className='font-bold inline ml-[10vw] text-center text-[5rem]  text-transparent ' > Don't Stress!</h2></motion.div>
         <div className='hidden md:grid md:grid-cols-12 md:grid-rows-12 md:w-[80vw] md:h-[90vh] mx-auto mb-10 gap-y-4 gap-x-4'>
         
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
@@ -91,7 +91,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.6 }} className='relative  md:col-span-6 bg-[#faf8fe] md:row-span-5 rounded-2xl ring-2 ring-purple-100 ring-offset-2 '>
-          <h2 className='text-[3vw] mt-[10%] font-mono leading-tight ml-5 font-semibold font-sans' > Growth<br/> Meter</h2><p className='text-xl px-4'>Track your progress</p>
+          <h2 className='text-[3vw] mt-[5%]  leading-tight ml-5 font-semibold font-sans' > Growth<br/> Meter</h2><p className='text-xl px-4'>Track your progress</p>
           <img src="./imgs/sections/Group 166 2 1.png" className='absolute w-[35%] right-0 bottom-0   h-auto '></img> </motion.div>
            
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
