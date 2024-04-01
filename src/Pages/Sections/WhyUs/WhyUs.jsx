@@ -5,19 +5,20 @@ export default function WhyUs() {
     <div >
 
       {/* for phone */}
-      <div className=' md:hidden grid grid-cols-12 grid-rows-12 w-[95vw] h-[100vh] mx-auto my-20 gap-y-4 gap-x-4'>
+      <div className='flex md:hidden  justify-start ' ><h2 className='font-bold ml-5 text-[3rem] mt-10  text-indigo-600 ' > Don't Stress!</h2></div>
+      <div className=' md:hidden grid grid-cols-12 grid-rows-12 w-[95vw] h-[100vh]  mx-auto my-5 gap-y-4 gap-x-4'>
         
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
        
-        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><h2 className='font-bold text-[1.5rem]  text-indigo-600 ' > Don't Stress!</h2><p className='text-[0.8rem]'>we got your back with leadly's powerful learning suite:</p></motion.div>
+        transition={{ duration: 0.5 }} className='   col-span-6  row-span-2'><p className='text-bold text-[1rem]'>we got your back with leadly's <br /> powerful learning suite:</p></motion.div>
 
 
 <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
        
         transition={{ duration: 0.9}} className='relative col-span-6 bg-[#faf8fe] row-span-4 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[1%] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-1 text-[0.9rem]'>guided learning journey</p>
+          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[3%] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-2 text-[0.9rem]'>guided learning journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         
 
