@@ -78,7 +78,7 @@ export default function WhyUs() {
       whileInView={{ opacity: 1, x:"0" }}
       transition={{ duration: 0.8,ease:"easeInOut" }}
        className='md:block hidden bg-gradient-to-r bg-clip-text from-[#5900d9] - bg-purple-400  ' ><h2 className='font-bold mx-[10%] text-[5rem] mt-10  text-transparent ' > Don't Stress!</h2></motion.div>
-        <div className='hidden md:grid md:grid-cols-12 md:grid-rows-12 md:w-[80vw] md:h-[90vh] mx-auto md:my-20 gap-y-4 gap-x-4'>
+        <div className='hidden md:grid md:grid-cols-12 md:grid-rows-12 md:w-[80vw] md:h-[90vh] mx-auto mb-10 gap-y-4 gap-x-4'>
         
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
