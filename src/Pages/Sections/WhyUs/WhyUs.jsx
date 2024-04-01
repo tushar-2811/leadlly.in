@@ -23,7 +23,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
        
         transition={{ duration: 0.5 ,delay:0.2}} className='relative col-span-6 bg-[#faf8fe] row-span-4 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[3%] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-5 text-[0.9rem]'>guided learning journey</p>
+          <h2 className=' text-[1.5rem] mt-[10%] leading-tight  ml-[3] font-bold font-sans' > Mentorship& Guidance Session</h2><p className='px-3 text-[0.9rem]'>guided learning <br /> journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         
 
@@ -31,7 +31,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
         
         transition={{ duration: 0.5,delay:0.2 }}  className='relative col-span-6  bg-[#faf8fe] row-span-1 rounded-xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className='text-[1.2rem] mt-[7%] leading-tight ml-2 font-bold font-sans' >Workshops</h2><p></p>
+          <h2 className='text-[1.2rem] mt-[7%] leading-tight ml-2 font-bold font-sans' >Workshops</h2><p className='px-2 text-[0.7rem]'>Ignite your expertise</p>
         <img src="./imgs/sections/Group 165 1.png" className='absolute w-[25%] right-[1.5vw] bottom-0   h-auto '></img> </motion.div>
        
 
@@ -113,7 +113,7 @@ export default function WhyUs() {
         whileInView={{ opacity: 1, scale: 1 }}
        
         transition={{ duration: 0.9}} className='relative md:col-span-3 bg-[#faf8fe] md:row-span-6 rounded-2xl ring-2 ring-purple-100 ring-offset-2'>
-          <h2 className=' text-[2.5vw] mt-[1vw] font-mono leading-tight ml-5 font-bold font-sans' > Mentorship& Guidance Session</h2><p className=' ml-5 text-xl'>guided learning journey</p>
+          <h2 className=' text-[2.5vw] mt-[1vw] font-mono leading-tight ml-5 font-bold font-sans' > Mentorship& Guidance Session</h2><p className=' ml-5 text-xl'>guided learning <br /> journey</p>
           <img src="./imgs/sections/Vecto 2.png" className='absolute w-[40%] right-0 bottom-0  h-auto '></img> </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
