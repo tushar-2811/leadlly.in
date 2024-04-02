@@ -3,7 +3,7 @@ import {Box,Center ,Spacer,Stack,Flex ,Text,Heading,useColorModeValue ,Image, ex
 import Typewriter from 'typewriter-effect';
 
 import { Link } from "react-router-dom";
-
+import backimg from "./../../../imgs/backimg1.png";
 
 
 const breakpoints = {
@@ -25,7 +25,7 @@ const Home = () => {
         
     <div id="About"    style={{height:"100vh",overflow:"hidden"}} >
 
-      <div className="absolute top-[5vh] z-0"><img className="h-[48vh] "  src="./imgs/home/backimg1.png"></img></div>
+      <div className="absolute top-[5vh] z-0"><img className="h-[48vh] "  src={backimg} alt="backim"></img></div>
       
       <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
           my={"5vh"} 

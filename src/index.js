@@ -7,7 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
-import { AuthProvider } from './Contexts/UserContext';
+
 
 export const server = "https://localhost:5000/api/v1";
 
@@ -19,9 +19,9 @@ const Appwrapper = () => {
 
   return (
 
-    <AuthProvider>
-      <App />
-    </AuthProvider>
+
+    <App />
+
 
   );
 };

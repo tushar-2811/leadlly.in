@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { image } from "@nextui-org/react";
-
+import bgImage from "./../../../imgs/Vector 60.svg"
 
 
 export default function BouncyCardsFeatures(){
   return (
     <section className="mx-auto relative  px-4 py-5 h-[400vh]">
       
-      <div className="absolute h-auto w-[45vw] top-[32vw] left-[46vw] bg-clip-content">
-        <img src="./imgs/sections/vector 60.svg "></img>
+      <div className="absolute h-auto w-[45vw] top-[30vw] left-[46vw] bg-clip-content">
+        <img src={bgImage}></img>
         
 
       </div>
@@ -27,11 +27,12 @@ export default function BouncyCardsFeatures(){
 
       </motion.div>
       </div>
-      <div className="flex flex-col w-[75vw] h-[100vh] justify-center">
+      <div className="flex flex-col w-[70vw] h-[100vh] justify-center">
       <motion.div initial={{ y:"80%" }} whileInView={{ y:"0%"}} transition={{ duration: 1,ease:"easeOut" }} className=" hidden md:flex h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
-        <h1 className="font-sans text-[7vw] leading-tight font-bold text-transparent">Bombarded by<span className="text-transparent text-[10vw]"> distractions</span> andfeeling isolated and Unheard? </h1>
+        <h1 className="font-sans text-[7vw] leading-tight font-bold text-transparent">Bombarded by<span className="text-transparent text-[10vw]"> distractions</span> and feeling isolated and Unheard? </h1>
 
       </motion.div>
+
       </div>
       <div className="flex flex-col h-[100vh] justify-center">
       <motion.div initial={{ y:"80%" }} whileInView={{ y:"0%"}} transition={{ duration: 1,ease:"easeOut" }} className=" hidden md:flex w-[65vw] h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
