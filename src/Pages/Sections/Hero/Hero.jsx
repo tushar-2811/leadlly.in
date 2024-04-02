@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
         
-    <section className="overflow-hidden h-[100vh]" >
+    <section className="overflow-hidden hidden md:flex flex-col h-[100vh]" >
 
 
       
@@ -55,6 +55,7 @@ const Home = () => {
         
 
         {/* phone */}
+        </section><section className="md:hidden h-[80vh]">
 
         <div className="flex flex-col md:hidden overflow-hidden ml-[5vw] w-[95vw] my-[5vh] h-auto">
         <div className="flex w-[80%] h-auto">
