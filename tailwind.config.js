@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       'sans': ['onest', 'sans-serif'],
     },
+
     borderRadius: {
       'none': '0',
       'sm': '0.125rem',
@@ -17,12 +18,23 @@ module.exports = {
       'full': '9999px',
       'large': '12px',
     },
-    extend: {
+    'sm': '640px',
 
 
+    'md': '768px',
 
-    },
+
+    'lg': '1024px',
+
+
+    'xl': '1280px',
+
+
+    '2xl': '1536px',
+
   },
+
+
 
   plugins: [nextui()],
 }

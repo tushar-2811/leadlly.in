@@ -4,54 +4,35 @@ import Typewriter from 'typewriter-effect';
 
 import { Link } from "react-router-dom";
 import backimg from "./../../../imgs/backimg1.png";
+import mentor from "./../../../imgs/mentor_hero.png";
+import student from "./../../../imgs/student_hero.png";
 
 
-const breakpoints = {
-  base: "0px",
-  sm: "320px",
-  md: "768px",
-  lg: "960px",
-  xl: "1200px",
-  "2xl": "1536px",
-};
 
 // 3. Extend the theme
-const theme = extendTheme({ breakpoints });
+
 
 
 const Home = () => {
   return (
     <>
         
-    <div id="About"    style={{height:"100vh",overflow:"hidden"}} >
-
-      <div className="absolute top-[5vh] z-0"><img className="h-[48vh] "  src={backimg} alt="backim"></img></div>
-      
-      <Flex  h={"auto"} py={"3vh"} overflow={"hidden"} mx={"5vw"}
-          my={"5vh"} 
-          
-          
-          
-      
-      
-      backdropBlur={"5px"}
-       w={{base: "90vw",
-       sm: "90vw",
-       md: "90vw",
-       lg: "90vw", }}>  
+    <section className="overflow-hidden h-[100vh]" >
 
 
-        <Flex h={"auto"} py={"5vh"} zIndex={5} opacity={1}   direction={"column"}  backdropBlur={"5px"} bg={useColorModeValue("#f9f2ff", "gray.700")}  justifyContent={"center"} flexWrap={"wrap"}
-        rounded={"5vw"}
-        w ={{
-          base: "90vw",
-          sm: "90vw",
-          md: "65vw",
-          lg: "55vw", 
-        }}>
-        <div className=" rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans px-[5vw]"
+      
+      
+       <div className="hidden md:flex overflow-hidden ml-[10vw] w-[90vw] my-[10vh] h-auto">
+     
+          <div className="w-[30%] my-[5vh]">
+            <img src={mentor} ></img>
+          </div>
+
+          <div className="flex flex-col w-[50%] gap-5 justify-center">   
+
+          <div className="full rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans  font-bold"
             >
-            <Heading fontWeight={"bold"}  opacity={1} zIndex={10}  color={"transparent"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"2.5rem",lg:"3.5rem"}}>Get your own <Typewriter
+            <Heading fontWeight={"bold"} fontFamily={"onest"} opacity={1} zIndex={10}  color={"transparent"} w={"auto"} h={"auto"}   fontSize={{base:"2.5rem",sm:"2.5rem",md:"3rem",lg:"3.2rem",xl:"4rem" }}>Get your own <Typewriter
   options={{
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
@@ -60,28 +41,56 @@ const Home = () => {
   
 /> to hold your hand
            
-            </Heading>  </div> <div>
-            < h4 className="text-[1rem] px-[5vw]  md:w-[70%] "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
-            </div>
+            </Heading>  </div>
             
-
+            <div>
+            < h4 className="text-[1rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
+            </div>
+  </div>
+  <div className=" absolute right-[7vw] w-[20%] h-auto ">
+          <img src={student} alt="student" />
+        </div>
       
-        </Flex>
-
-        <Flex display={{sm:"none",base:"none",md:"flex",lg:"flex"}} direction ={"column"} justifyContent={"center"}
+        </div>
         
-        >
-          <Center>
-          <Image my={"20px"} src={"./imgs/home/onlinelearning.svg"} h={"40vh"} mx={"3vw"} w={"auto"}
-          ></Image>
-          </Center>
-          
-         
-        </Flex>
-      </Flex>
 
-    
-    </div>
+        {/* phone */}
+
+        <div className="flex flex-col md:hidden overflow-hidden ml-[5vw] w-[95vw] my-[5vh] h-auto">
+        <div className="flex w-[80%] h-auto">
+        <div className="full mt-10 rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans  font-bold"
+            >
+            <Heading fontWeight={"bold"} fontFamily={"onest"} opacity={1} zIndex={10}  color={"transparent"} w={"auto"} h={"auto"}   fontSize={{base:"2rem",sm:"2.5rem",md:"3rem",lg:"3.2rem",xl:"4rem" }}>Get your own <Typewriter
+  options={{
+    strings: ["Bade Bhaiya","Badi Didi"],
+    autoStart: true,
+    loop: true,
+  }}
+  
+/> to hold your hand
+           
+            </Heading>  </div>
+            <div className=" absolute right-[5vw] top-[16vh] w-[45%] h-auto ">
+          <img src={student} alt="student" />
+        </div>
+
+        </div>
+        <div className="flex w-full py-5">
+        <div className="absolute w-[50%] ">
+            <img src={mentor} ></img>
+          </div>
+
+        <div className="w-[55%] mt-[10vh] ml-[42%]">
+        
+      
+        < h4 className="text-[0.8rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
+        {/* <button className="w-auto bg-[#5a10d9] text-[0.8rem] px-2 text-bold text-white font-sans py-2 rounded-full ">CONTACT US</button> */}
+        </div>
+        </div>
+        </div>
+     
+       
+    </section>
     
    
     </>
