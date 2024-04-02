@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
         
-    <div id="About" style={{height:"auto",overflow:"hidden"}} >
+    <div id="About"    style={{height:"100vh",overflow:"hidden"}} >
 
       <div className="absolute top-[5vh] z-0"><img className="h-[48vh] "  src="./imgs/home/backimg1.png"></img></div>
       

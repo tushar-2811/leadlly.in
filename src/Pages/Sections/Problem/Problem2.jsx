@@ -6,51 +6,47 @@ import { image } from "@nextui-org/react";
 
 export default function BouncyCardsFeatures(){
   return (
-    <section className="mx-auto  px-4 py-5 text-slate-800">
+    <section className="mx-auto relative  px-4 py-5 h-[400vh]">
       
-      <div className="mb-4 grid grid-cols-12 grid-rows-12 h-[120vh] md:h-[70vh] gap-4">
-      <motion.div className="col-span-12 md:col-span-5 row-span-3 md:row-span-6  py-15  rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4  " 
-       initial={{ opacity:0.3, scale:0.3 }}
-       whileInView={{ opacity:1, scale:1}}
-       transition={{ duration: 0.5 }}
-       >
-          <h3 className="mx-auto py-10  text-slate-800 text-center  text-3xl font-semibold">
-            Are you buried under the <b>backlogs,</b></h3>
-           
-    
+      <div className="absolute h-auto w-[45vw] top-[32vw] left-[46vw] bg-clip-content">
+        <img src="./imgs/sections/vector 60.svg "></img>
         
-        </motion.div>
-        <motion.div className="col-span-12 md:col-span-7 row-span-3 md:row-span-6 py-15  rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 " 
-       initial={{ opacity:0.3, scale:0.3 }}
-       whileInView={{ opacity:1, scale:1}}
-       transition={{ duration: 0.5 }}
-       >
-          <h3 className="mx-auto py-10  text-slate-800 text-center text-3xl font-semibold">
-            Bombarded by <b>Distractions</b> and feeling <br/> <b>Isolated</b> and <b>Unheard?</b> </h3>
-           
-        </motion.div>
-        <motion.div className="col-span-12 md:col-span-7 row-span-3 md:row-span-6 py-15  rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4 " 
-      initial={{ opacity:0.3, scale:0.3 }}
-      whileInView={{ opacity:1, scale:1}}
-       transition={{ duration: 0.5 }}
-       >
-         <h3 className="mx-auto py-10  text-slate-800 text-center text-3xl font-semibold">
-           Lacking a proper <b>Schedule</b> and <b>Procastinate</b> a lot </h3>
-           
-        </motion.div>
-        
-        <motion.div className="col-span-12 md:col-span-5 md:row-span-6 row-span-3 align-middle  py-15  rounded-2xl bg-gradient-to-tr from-purple-100 to-pink-50 p-4" 
-      initial={{ opacity:0.3, scale:0.3 }}
-      whileInView={{ opacity:1, scale:1}}
-       transition={{ duration: 0.5 }}
-       >
-          <h3 className="mx-auto  py-10 text-slate-800 text-center text-3xl font-semibold">
-            Which only adds on the <br/> <b>Anxiety</b></h3>
-           
-    
-        
-        </motion.div>
-</div>
+
+      </div>
+      <motion.div initial={{ width:"0" }} whileInView={{ width:"calc(50vw)"}} transition={{ duration: 1,delay:1.2 }}  className="absolute h-[13vw] left-[9vw] top-[31vw] opacity-50 rounded-3xl z-0 bg-[#ffb35c]"></motion.div>
+
+      <motion.div initial={{ width:"0" }} whileInView={{ width:"calc(50vw)"}} transition={{ duration: 1,delay:1.2 }}  className="absolute h-[13vw] left-[9vw] top-[132vw] opacity-50 rounded-3xl z-0 bg-[#ffb35c]"></motion.div>
+      
+      <motion.div initial={{ width:"0" }} whileInView={{ width:"calc(50vw)"}} transition={{ duration: 1,delay:1.2 }}  className="absolute h-[13vw] left-[9vw] top-[31vw] opacity-50 rounded-3xl z-0 bg-[#ffb35c]"></motion.div>
+      <motion.div initial={{ width:"0" }} whileInView={{ width:"calc(50vw)"}} transition={{ duration: 1,delay:1.2 }}  className="absolute h-[13vw] left-[9vw] top-[31vw] opacity-50 rounded-3xl z-0 bg-[#ffb35c]"></motion.div>
+      <div className='flex flex-col md:ml-[10vw] h-full  md:w-auto'>
+
+        <div className="flex flex-col w-[65vw] h-[100vh] justify-center">
+      <motion.div initial={{ y:"80%" }} whileInView={{ y:"0%"}} transition={{ duration: 1,ease:"easeOut" }} className=" hidden md:flex h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
+        <h1 className="font-sans text-[7vw] leading-tight text-transparent">Are you buried under the <span className="text-transparent text-[10vw]">backlogs?</span> </h1>
+
+      </motion.div>
+      </div>
+      <div className="flex flex-col w-[75vw] h-[100vh] justify-center">
+      <motion.div className=" hidden md:flex h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
+        <h1 className="font-sans text-[7vw] leading-tight text-transparent">Bombarded by<span className="text-transparent text-[10vw]"> distractions</span> andfeeling isolated and Unheard? </h1>
+
+      </motion.div>
+      </div>
+      <div className="flex flex-col h-[100vh] justify-center">
+      <motion.div className=" hidden md:flex w-[65vw] h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
+        <h1 className="font-sans text-[8vw] leading-tight text-transparent">Lacking a proper Schedule and <span className="text-transparent text-[10vw]">Procastinate</span> a lot? </h1>
+
+      </motion.div>
+      </div>
+      <div className="flex flex-col h-[100vh] justify-center">
+      <motion.div className=" hidden md:flex w-[60vw] h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
+        <h1 className="font-sans text-[8vw]  leading-tight text-transparent">Which only adds on the <span className="text-transparent text-[10vw]">Anxiety</span> </h1>
+
+      </motion.div>
+      </div>
+
+      </div>
     </section>
   );
 };

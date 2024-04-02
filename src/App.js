@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Signup from './Pages/AUTH/Signup2.jsx';
 
-import Test from './Pages/testing/test.jsx';
+
 import Login from './Pages/AUTH/Login.jsx';
 import CourseDetails from './Pages/CourseDetails/CourseDetails.jsx';
 import Mentors from './Pages/Mentor/Mentors.jsx';
