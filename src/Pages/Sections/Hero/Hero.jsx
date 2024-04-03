@@ -55,7 +55,7 @@ const Home = () => {
         
 
         {/* phone */}
-        </section><section className="md:hidden h-[80vh]">
+        </section><section className="md:hidden h-[60vh]">
 
         <div className="flex flex-col md:hidden overflow-hidden ml-[5vw] w-[95vw] my-[5vh] h-auto">
         <div className="flex w-[80%] h-auto">
