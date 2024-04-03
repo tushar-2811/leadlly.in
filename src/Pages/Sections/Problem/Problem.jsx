@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { image } from "@nextui-org/react";
 import bgImage from "./../../../imgs/Vector 60.png"
-import holdingHand from "./../../../imgs/Group 202.png"
+
 import knocking from "./../../../imgs/Group 203.png"
 import backlogs from "./../../../imgs/backlogs.png"
 import distractions from "./../../../imgs/distractions.png"

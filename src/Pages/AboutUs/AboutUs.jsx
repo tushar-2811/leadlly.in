@@ -2,16 +2,21 @@ import React from 'react'
 import features from './../../imgs/features.svg'
 import teamwork from './../../imgs/teamwork.svg'
 import explaination from './../../imgs/explaination.png'
+import holding_hand from './../../imgs/holding_hand.png'
 export default function AboutUs() {
   return (
 <>
 
     <div className='bg-[#fefbff] h-auto flex flex-col gap-[5vh] w-screen overflow-clip mt-[5vh]'>
       
-      <div className="flex flex-col  bg-yellow-50 p-[5vw] rounded-2xl font-semibold  font-sans text-center text-[0.8rem] md:text-[1.2rem] w-[95vw] md:w-[80%] mx-auto justify-center"> At Leadlly, we believe in fostering a student's true potential – not just through content memorization, but by equipping them with the tools and strategies to thrive in academics and beyond. We're a passionate team of educators, technologists, and student success advocates dedicated to bridging the gap between potential and achievement. <br/>
+      <div className="flex md:flex-row flex-col">
+      <div className="flex flex-col  bg-yellow-50 p-[5vw] rounded-2xl font-semibold  font-sans text-center text-[0.8rem] md:text-[1.2rem] w-[95vw] md:w-[70%] ml-[2%] justify-center"> At Leadlly, we believe in fostering a student's true potential – not just through content memorization, but by equipping them with the tools and strategies to thrive in academics and beyond. We're a passionate team of educators, technologists, and student success advocates dedicated to bridging the gap between potential and achievement. <br/>
 
 <span className='font-extrabold text-purple-900'> <br />Our Mission:</span> "To empower students with a holistic learning experience that cultivates academic success, intellectual growth, and a resilient mindset." 
 </div>
+<div className='md:w-[28%] w-[95vw] mt-2 flex flex-col justify-center h-auto'> <img className='' src={holding_hand} alt="" /> </div>
+</div>
+
       <div className="md:flex hidden w-[95vw] justify-between gap-[5vh] h-auto py-[5vh] mx-auto"> 
 
 
