@@ -89,8 +89,8 @@ export default function Navbar() {
 
                 
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link to="/course-details">
-                    Contact Us
+                  <Link to="/about-us">
+                    About Us
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
@@ -120,8 +120,8 @@ export default function Navbar() {
                 </DropdownTrigger>
                 <DropdownMenu aria-label="Example with disabled actions" disabledKeys={["edit", "delete"]}>
                
-                  <DropdownItem key="new" onClick={isOpen ? onClose : onOpen} ><Link to="/test">
-                    <b>TestPage</b>
+                  <DropdownItem key="new" onClick={isOpen ? onClose : onOpen} ><Link to="/about-us">
+                    <b>About Us</b>
                   </Link></DropdownItem>
                   <DropdownItem key="copy" onClick={isOpen ? onClose : onOpen}><Link to="/signup">
                     <b>Sign Up</b>

@@ -62,7 +62,7 @@ export default function BouncyCardsFeatures(){
       </section>
       <section className="mx-auto md:hidden relative  px-4 py-5  h-auto">
 {/* phone */}
-<div className="absolute w-[70%] top-[25vh] ml-[10%]   bg-clip-content">
+<div className="absolute w-[80%] top-[19vh] ml-[10%]   bg-clip-content">
         <img src={bgImage}></img>
         
       

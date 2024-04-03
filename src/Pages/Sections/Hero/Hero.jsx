@@ -83,8 +83,8 @@ const Home = () => {
         <div className="w-[55%] mt-[10vh] ml-[42%]">
         
       
-        < h4 className="text-[0.8rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
-        {/* <button className="w-auto bg-[#5a10d9] text-[0.8rem] px-2 text-bold text-white font-sans py-2 rounded-full ">CONTACT US</button> */}
+        < h4 className="text-[0.8rem] leading-tight py-4 font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
+         <button className="w-auto bg-[#5a10d9] text-[0.8rem] ml-8 px-2 text-bold text-white font-sans py-2 rounded-full ">Learn more</button> 
         </div>
         </div>
         </div>
