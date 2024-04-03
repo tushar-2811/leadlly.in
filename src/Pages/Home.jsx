@@ -7,14 +7,14 @@ import WhyUs from './Sections/WhyUs/WhyUs.jsx';
 import Testimonial from './Sections/Testimonials/Testimonial.jsx';
 
 export default function Home() {
-  return (
-    <div className='bg-[#fefbff] w-screen overflow-clip'>
+  return (<div className="bg-[#fefbff]">
+    <div className=' w-screen overflow-clip'>
       <Hero/>
       <Problem/>
       
       <WhyUs/>
       <Testimonial/>
-      
+      </div>
       
 
     </div>

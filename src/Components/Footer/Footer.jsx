@@ -3,33 +3,41 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 import smily from "./../../imgs/smily.png"
 
 export default function Footer(){
 
 
     return(
-        <div className="flex flex-shrink  bg-purple-100  ">
+        <div className="flex  gap-2  bg-purple-100  ">
             <div className="flex  flex-col w-[30vw] h-[40vh] justify-start gap-[5%] ">
 
-            <div className="inline-block  ml-[3vw] pt-3 "><img className="h-8" src="./imgs/logos/Group 122.svg" alt="" /></div>
-            <div className="md:w-[30vw] w-[40vw] px-[3vw] "><p className="text-purple-950 text-[1rem] ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloremque sapiente vitae aperiam quas, quaerat accusamus non provident obcaecati quod ipsam perspiciatis</p></div>
+            <div className="inline-block  ml-[3vw] mt-3 "><img className="md:h-14" src="./imgs/logos/Group 122.svg" alt="" /></div>
+            <div className=" mx-auto md:w-[30vw] md:mx-auto w-[55vw] pl-2 "><p className="text-purple-950 text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
             </div>
             
-            <div className="flex flex-col w-[30vw] h-full ">
+            <div className="flex flex-col ml-[25vw] w-[40vw] md:w-[40vw] h-full ">
+            <div className="md:mx-auto  text-[#5a10d9]"><h1 className="mt-5 leading-tight font-lato mb-2 text-[1.2rem]  md:text-[1.6rem] font-bold ">Important Links </h1>
+            <h2 className="text-[0.8rem] md:text-[1rem]">
+             <Link to="/">Contact Us</Link>
+            <br/> <Link to="/">Become a Mentor</Link>
+            <br/> <Link to="/about-us">About Us</Link>
+            <br/> <Link to="/courses">Courses</Link>
+            </h2> 
+            </div>
 
-            <div className="mx-auto"><h1 className="mt-[30%]  font-sans text-indigo-800 text-[2rem] font-bold ">FOLLOW US: <br /></h1></div>
+            <div className="mx-auto"><h1 className="mt-[10%]  font-lato  text-[#5a10d9] text-[1.2rem] md:text-[1.6rem] font-bold ">FOLLOW US: <br /></h1></div>
 
-            <div className="flex flex-shrink  justify-center gap-3 mx-auto  bg-purple-100  ">
+            <div className="flex  justify-center md:gap-2 mx-auto  bg-purple-100  ">
             
-            <div className="inline-block h-8 w-8 my-auto cursor-pointer "><a ><FaInstagram className="size-8 "/></a></div>
-            <div className="inline-block h-8 w-8 my-auto cursor-pointer"><a><FaLinkedin className="size-8"/></a></div>
-            <div className="inline-block  h-8 w-8 my-auto cursor-pointer"><a><FaSquareXTwitter className="size-8"/></a></div>
-            <div className="inline-block  h-8 w-8 my-auto cursor-pointer"><a> <FaYoutube className="size-8"/></a></div>
+            <div className="inline-block  my-auto cursor-pointer "><a ><FaInstagram className="md:size-8 size-5"/></a></div>
+            <div className="inline-block my-auto cursor-pointer"><a><FaLinkedin className="md:size-8 size-5"/></a></div>
+            <div className="inline-block  my-auto cursor-pointer"><a><FaSquareXTwitter className="md:size-8 size-5"/></a></div>
+            <div className="inline-block  my-auto cursor-pointer"><a> <FaYoutube className="md:size-8 size-5"/></a></div>
            </div></div>
 
-          <div className="w-[15vw] ml-[20vw]  h-auto "> <img src={smily} alt="" /></div>
+          <div className=" hidden md:flex ml-[20vw] h-full "> <img src={smily} alt="" /></div>
         </div>
     )
 

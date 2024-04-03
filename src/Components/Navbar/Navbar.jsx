@@ -97,8 +97,8 @@ export default function Navbar() {
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link to="/about-us">
-                    About Us
+                  <Link to="/">
+                    Contact Us
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
