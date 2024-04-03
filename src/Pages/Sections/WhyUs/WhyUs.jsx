@@ -81,10 +81,10 @@ export default function WhyUs() {
       {/* for computer */}
       
       <motion.div 
-      initial={{ opacity: 0, scale:0.5 }}
-      whileInView={{ opacity: 1,scale:1 }}
+      initial={{ y:"50%", scale:0.8 }}
+      whileInView={{ y:"0",scale:1 }}
       transition={{ duration: 1,ease:"easeInOut" }}
-       className='md:block w-[60vw] hidden bg-gradient-to-r bg-clip-text  mt-10 from-[#5900d9] - bg-purple-400  ' ><h2 className='font-bold inline ml-[10vw] text-center text-[5rem]  text-transparent ' > Don't Stress!</h2></motion.div>
+       className='md:block w-[60vw] hidden bg-gradient-to-r bg-clip-text pb-10 mt-10 from-[#5900d9] - bg-purple-400  ' ><h2 className='font-bold inline ml-[10vw] text-center text-[5rem]  text-transparent ' > Don't Stress!</h2></motion.div>
         <div className='hidden md:grid md:grid-cols-12 md:grid-rows-12 md:w-[80vw] md:h-[90vh] mx-auto mb-10 gap-y-4 gap-x-4'>
         
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
