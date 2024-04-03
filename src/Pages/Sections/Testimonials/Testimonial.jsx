@@ -90,7 +90,7 @@ After all, under his guidance I have seen good changes in my schedule and in m
 
 
        
-             <h2 className="ml-5 hidden mb-5 overflow-hidden md:block md:ml-[8vw] text-4xl font-bold font-sans text-[#5900D9] md:text-5xl">
+             <h2 className="ml-5 hidden mb-5  md:block md:ml-[8vw] text-4xl font-bold font-sans text-[#5900D9] md:text-5xl">
           Lets hear from our<br/>
           <span className="text-purple-400"> Happy Learners...</span>
         </h2>
