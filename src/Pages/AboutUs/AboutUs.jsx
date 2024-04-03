@@ -10,8 +10,8 @@ export default function AboutUs() {
 
     <div className='bg-[#fefbff] h-auto flex flex-col gap-[5vh] w-screen overflow-clip mt-[5vh]'>
       
-      <img className=' absolute w-32 top-[200vh] md:top-[130vh]' src={object1}></img>
-      <img className=' absolute w-32 top-[500vh] right-0 md:top-[270vh]' src={object1}></img>
+      <img className='opacity-60 absolute w-32 top-[200vh] md:top-[130vh]' src={object1}></img>
+      <img className=' absolute opacity-60 w-32 top-[500vh] right-0 md:top-[270vh]' src={object1}></img>
       <div className="flex md:flex-row flex-col">
       <div className="flex flex-col  bg-yellow-50 p-[5vw] rounded-2xl font-semibold  font-sans text-center text-[0.8rem] md:text-[1.2rem] w-[95vw] md:w-[70%] ml-[2%] justify-center"> At Leadlly, we believe in fostering a student's true potential – not just through content memorization, but by equipping them with the tools and strategies to thrive in academics and beyond. We're a passionate team of educators, technologists, and student success advocates dedicated to bridging the gap between potential and achievement. <br/>
 
