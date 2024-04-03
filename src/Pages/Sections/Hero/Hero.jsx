@@ -8,7 +8,6 @@ import mentor from "./../../../imgs/mentor_hero.png";
 import student from "./../../../imgs/student_hero.png";
 
 
-
 // 3. Extend the theme
 
 

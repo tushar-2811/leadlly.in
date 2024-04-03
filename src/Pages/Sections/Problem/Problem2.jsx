@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { image } from "@nextui-org/react";
 import bgImage from "./../../../imgs/Vector 60.svg"
-
+import holdingHand from "./../../../imgs/Group 202.png"
+import knocking from "./../../../imgs/Group 203.png"
 
 export default function BouncyCardsFeatures(){
   return (<>
@@ -12,7 +13,7 @@ export default function BouncyCardsFeatures(){
       <div className="absolute height-[100vh] top-[50vh] w-[47vw]  left-[46vw] ">
         <img src={bgImage}></img>
         </div>
-    
+        
 
      
       {/* <motion.div initial={{ width:"0" }} whileInView={{ width:"calc(50vw)"}} transition={{ duration: 1,delay:1.2 }}  className="absolute h-[13vw] left-[9vw] top-[31vw] opacity-50 rounded-3xl z-0 bg-[#ffb35c]"></motion.div>
