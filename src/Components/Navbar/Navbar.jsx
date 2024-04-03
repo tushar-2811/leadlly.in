@@ -85,16 +85,24 @@ export default function Navbar() {
                 id="myDIV"
                 mx={"5vw"}
               >
-                
+                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
+                  <Link to="/about-us">
+                    About Us
+                  </Link>
+                </Button>
 
-                
+                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
+                  <Link to="/Courses">
+                    Courses
+                  </Link>
+                </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
                   <Link to="/about-us">
                     About Us
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link to="/course-details">
+                  <Link to="/">
                     Become a Mentor
                   </Link>
                 </Button>
@@ -118,17 +126,23 @@ export default function Navbar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}/>
                 </DropdownTrigger>
-                <DropdownMenu aria-label="Example with disabled actions" disabledKeys={["edit", "delete"]}>
+                <DropdownMenu aria-label="Example with disabled actions" >
                
-                  <DropdownItem key="new" onClick={isOpen ? onClose : onOpen} ><Link to="/about-us">
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link to="/about-us">
                     <b>About Us</b>
                   </Link></DropdownItem>
-                  <DropdownItem key="copy" onClick={isOpen ? onClose : onOpen}><Link to="/signup">
-                    <b>Sign Up</b>
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/courses">
+                    <b>Courses</b>
                   </Link></DropdownItem>
-                  <DropdownItem key="edit" onClick={isOpen ? onClose : onOpen}><Link to="/contact">
-                    <b>Contact</b>
+                  
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/">
+                    <b>Contact Us</b>
                   </Link></DropdownItem>
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/">
+                    <b>Become a Mentor</b>
+                  </Link></DropdownItem>
+                  
+
                   
                 </DropdownMenu>
               </Dropdown>

@@ -23,10 +23,10 @@ export default function Footer(){
 
             <div className="flex flex-shrink  justify-center gap-3 mx-auto  bg-purple-100  ">
             
-            <div className="inline-block h-10 w-10 my-auto cursor-pointer "><a ><FaInstagram className="size-8 "/></a></div>
-            <div className="inline-block h-10 w-10 my-auto cursor-pointer"><a><FaLinkedin className="size-8"/></a></div>
-            <div className="inline-block  h-10 w-10 my-auto cursor-pointer"><a><FaSquareXTwitter className="size-8"/></a></div>
-            <div className="inline-block  h-10 w-10 my-auto cursor-pointer"><a> <FaYoutube className="size-8"/></a></div>
+            <div className="inline-block h-8 w-8 my-auto cursor-pointer "><a ><FaInstagram className="size-8 "/></a></div>
+            <div className="inline-block h-8 w-8 my-auto cursor-pointer"><a><FaLinkedin className="size-8"/></a></div>
+            <div className="inline-block  h-8 w-8 my-auto cursor-pointer"><a><FaSquareXTwitter className="size-8"/></a></div>
+            <div className="inline-block  h-8 w-8 my-auto cursor-pointer"><a> <FaYoutube className="size-8"/></a></div>
            </div></div>
 
           <div className="w-[15vw] ml-[20vw]  h-auto "> <img src={smily} alt="" /></div>

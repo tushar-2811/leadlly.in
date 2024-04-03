@@ -1,13 +1,13 @@
 import React from "react";
 import {Box,Center ,Spacer,Stack,Flex ,Text,Heading,useColorModeValue ,Image, extendTheme, Button} from "@chakra-ui/react"
 import Typewriter from 'typewriter-effect';
-
+import { MdOutlineArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import backimg from "./../../../imgs/backimg1.png";
 import mentor from "./../../../imgs/mentor_hero.png";
 import student from "./../../../imgs/student_hero.png";
 
-
+import { Icon } from "@chakra-ui/react";
 // 3. Extend the theme
 
 
@@ -44,6 +44,7 @@ const Home = () => {
             
             <div>
             < h4 className="text-[1rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
+            <Button rightIcon={<Icon as={MdOutlineArrowOutward}/>} bgColor={"#5a10d9"} ml={"60%"} rounded={"full"} color={"white"} fontWeight={"extrabold"} mt={5}><Link to="/about-us">Learn More</Link></Button>
             </div>
   </div>
   <div className=" absolute right-[7vw] w-[20%] h-auto ">
@@ -84,7 +85,10 @@ const Home = () => {
         
       
         < h4 className="text-[0.8rem] leading-tight py-4 font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
-         <button className="w-auto bg-[#5a10d9] text-[0.8rem] ml-8 px-2 text-bold text-white font-sans py-2 rounded-full ">Learn more</button> 
+        
+         <Button rightIcon={<Icon as={MdOutlineArrowOutward}/>} bgColor={"#5a10d9"} ml={5} rounded={"full"} color={"white"} fontWeight={"extrabold"} >
+         <Link to="/about-us">Learn More</Link>
+  </Button>
         </div>
         </div>
         </div>
