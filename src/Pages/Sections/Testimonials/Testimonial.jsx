@@ -24,8 +24,8 @@ const ComponentName = () => {
             Mahip bhaiya is a very good mentor, the way in which he guided me and the tasks that he gave me are very good. I saw improvement in my learning skills. Also tracker and error book ne bhi meri bahut help ki. Overall leadlly helped me a lot in my journey....
             </h3>
             <div className='flex w-full h-[auto] my-5'>
-                <div className='flex flex-col w-[20vw] h-[20vw] rounded-[8vw] bg-[#f5ebff] text-center font-ultrabold text-white justify-center text-[2rem] ml-5 '>A</div>
-            <p className='  text-[0.8rem] text-right font-sans ml-5 p-1 mt-5'>~ Ankush JEE Aspirant</p></div>
+                <div className='flex flex-col w-[20vw] h-[20vw] rounded-[8vw] bg-[#f5ebff] text-center font-ultrabold text-white justify-center text-[2rem] ml-5 '>V</div>
+            <p className='  text-[0.8rem] text-right font-sans ml-5 p-1 mt-5'>~ Vaibhav JEE Aspirant</p></div>
         </motion.div>
         <motion.div
         initial={{y:"50%" ,opacity:0}}
@@ -107,8 +107,8 @@ After all, under his guidance I have seen good changes in my schedule and in m
             Mahip bhaiya is a very good mentor, the way in which he guided me and the tasks that he gave me are very good. I saw improvement in my learning skills. Also tracker and error book ne bhi meri bahut help ki. Overall leadlly helped me a lot in my journey....
             </h3>
             <div className='flex w-full h-[auto] my-5'>
-                <div className='flex flex-col w-[6vw] h-[5vw] rounded-[8vw] bg-[#f5ebff] text-center font-ultrabold text-white justify-center text-[2rem] ml-5 '>A</div>
-            <p className='  text-[0.8rem]  text-right font-sans p-1 ml-5 mt-5'>~ Ankush JEE Aspirant</p></div>
+                <div className='flex flex-col w-[6vw] h-[5vw] rounded-[8vw] bg-[#f5ebff] text-center font-ultrabold text-white justify-center text-[2rem] ml-5 '>V</div>
+            <p className='  text-[0.8rem]  text-right font-sans p-1 ml-5 mt-5'>~ Vaibhav JEE Aspirant</p></div>
         </div>
         <div className='relative ring-2 bg-[#f9f4fe] ring-pink-50 rounded-2xl ring-offset-2 shadow-lg shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
         

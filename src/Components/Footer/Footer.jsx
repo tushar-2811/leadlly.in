@@ -37,7 +37,7 @@ export default function Footer(){
             <div className="inline-block  my-auto cursor-pointer"><a> <FaYoutube className="md:size-8 size-5"/></a></div>
            </div></div>
 
-          <div className=" hidden md:flex ml-[20vw] h-full "> <img src={smily} alt="" /></div>
+          <div className=" hidden md:flex my-auto ml-[20vw] h-full "> <img src={smily} alt="" className="my-auto"/></div>
         </div>
     )
 
