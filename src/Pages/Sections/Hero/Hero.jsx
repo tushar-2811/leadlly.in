@@ -8,8 +8,6 @@ import mentor from "./../../../imgs/mentor_hero.png";
 import student from "./../../../imgs/student_hero.png";
 
 import { Icon } from "@chakra-ui/react";
-// 3. Extend the theme
-
 
 
 const Home = () => {
@@ -36,6 +34,7 @@ const Home = () => {
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
     loop: true,
+    cursor: "|",
   }}
   
 /> to hold your hand
@@ -44,7 +43,7 @@ const Home = () => {
             
             <div>
             < h4 className="text-[1rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
-            <Button rightIcon={<Icon as={MdOutlineArrowOutward}/>} bgColor={"#5a10d9"} ml={"60%"} rounded={"full"} color={"white"} fontWeight={"extrabold"} mt={5}><Link to="/about-us">Learn More</Link></Button>
+            <Button  bgColor={"#ffb35c"} size={"lg"} ml={"60%"} rounded={"full"} color={"white"} fontWeight={"extrabold"} mt={5}><Link to="/about-us">Learn More</Link></Button>
             </div>
   </div>
   <div className=" absolute right-[7vw] w-[20%] h-auto ">
@@ -66,6 +65,7 @@ const Home = () => {
     strings: ["Bade Bhaiya","Badi Didi"],
     autoStart: true,
     loop: true,
+    cursor: "|",
   }}
   
 /> to hold your hand
@@ -86,7 +86,7 @@ const Home = () => {
       
         < h4 className="text-[0.8rem] leading-tight py-4 font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
         
-         <Button rightIcon={<Icon as={MdOutlineArrowOutward}/>} bgColor={"#5a10d9"} ml={5} rounded={"full"} color={"white"} fontWeight={"extrabold"} >
+         <Button  bgColor={"#ffb35c"} ml={5} rounded={"full"} color={"white"} fontWeight={"extrabold"} >
          <Link to="/about-us">Learn More</Link>
   </Button>
         </div>

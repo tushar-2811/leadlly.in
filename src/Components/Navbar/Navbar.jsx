@@ -101,11 +101,7 @@ export default function Navbar() {
                     Contact Us
                   </Link>
                 </Button>
-                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link to="/">
-                    Become a Mentor
-                  </Link>
-                </Button>
+                
 
                 
               </HStack>
@@ -138,9 +134,7 @@ export default function Navbar() {
                   <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/">
                     <b>Contact Us</b>
                   </Link></DropdownItem>
-                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/">
-                    <b>Become a Mentor</b>
-                  </Link></DropdownItem>
+                  
                   
 
                   
