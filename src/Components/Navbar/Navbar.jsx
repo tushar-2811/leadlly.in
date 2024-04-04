@@ -53,7 +53,7 @@ export default function Navbar() {
                     {" "}
                     
                     
-            <Image className="hidden md:flex" src={logo}
+            <Image className="flex" src={logo}
 
             boxSize = {"30px"}
         
@@ -61,14 +61,7 @@ export default function Navbar() {
             onclick = {onClose}
 
             />
-            <Image className="md:hidden flex" src={logo2}
             
-            boxSize = {"140px"}
-        
-            alt={"logo"}
-            onclick = {onClose}
-
-            />
             </Link>
 
             <Show breakpoint="(min-width: 1000px)">

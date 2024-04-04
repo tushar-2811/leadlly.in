@@ -5,7 +5,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import smily from "./../../imgs/smily.png"
-
+import logo from "./../../imgs/logos/Group 122.svg"
 export default function Footer(){
 
 
@@ -13,8 +13,8 @@ export default function Footer(){
         <div className="flex  gap-2  bg-purple-100  ">
             <div className="flex  flex-col w-[30vw] h-[40vh] justify-start gap-[5%] ">
 
-            <div className="inline-block  ml-[3vw] mt-3 "><img className="md:h-14" src="./imgs/logos/Group 122.svg" alt="" /></div>
-            <div className=" mx-auto md:w-[30vw] md:mx-auto w-[55vw] pl-2 "><p className="text-purple-950 text-justify text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
+            <div className="inline-block  ml-[3vw] mt-3 "><img className="md:h-14" src={logo} alt="" /></div>
+            <div className=" mx-auto md:w-[30vw] md:mx-auto w-[55vw] pl-2 "><p className="text-purple-950 text-left text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
             </div>
             
             <div className="flex flex-col ml-[25vw] w-[40vw] md:w-[40vw] h-full ">
