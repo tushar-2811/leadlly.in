@@ -86,7 +86,7 @@ const Home = () => {
       
         < h4 className="text-[0.8rem] leading-tight py-4 font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
         
-         <Button  bgColor={"#ffb35c"} ml={5} rounded={"full"} color={"white"} fontWeight={"extrabold"} >
+         <Button  bgColor={"#ffb35c"} ml={16} rounded={"full"} color={"white"} fontWeight={"extrabold"} >
          <Link to="/about-us">Learn More</Link>
   </Button>
         </div>
