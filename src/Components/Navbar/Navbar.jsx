@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Typewriter} from 'typewriter-effect';
+import logo2 from "./../../imgs/logos/Group 122.svg";
+import logo from "./../../imgs/logos/logo1.png";
 import {
   Box,
   Flex,
@@ -40,7 +41,7 @@ export default function Navbar() {
 
   return (
     <div id="navFix" className="flex h-30 rounded-2xl  mx-auto ">
-      <Navbar_ maxWidth="full" className="rounded-2xl h-12 mt-5 shadow-xl ring-slate-200 ring-2 ring-offset-2" >
+      <Navbar_ maxWidth="full" className="rounded-2xl h-16 mt-5 shadow-xl ring-slate-200 ring-2 ring-offset-2" >
       <Box
         
         
@@ -52,8 +53,17 @@ export default function Navbar() {
                     {" "}
                     
                     
-            <Image src={"./imgs/logos/logo1.png"}
+            <Image className="hidden md:flex" src={logo}
+
             boxSize = {"30px"}
+        
+            alt={"logo"}
+            onclick = {onClose}
+
+            />
+            <Image className="md:hidden flex" src={logo2}
+            
+            boxSize = {"140px"}
         
             alt={"logo"}
             onclick = {onClose}
