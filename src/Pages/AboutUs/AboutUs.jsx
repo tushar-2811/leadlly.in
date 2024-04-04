@@ -20,7 +20,7 @@ export default function AboutUs() {
 <div className='md:w-[38%]  w-[95vw]  flex flex-col justify-center h-auto'> <img className='mt-5' src={holding_hand} alt="" /> </div>
 </div>
 
-      <div className="md:flex hidden w-[95vw] justify-between gap-[5vh] h-auto py-[5vh] mx-auto"> 
+      <div className="md:flex hidden w-[95vw] justify-between gap-[5vh] h-auto py-[5vh] m-1 mx-auto"> 
 
 
      
