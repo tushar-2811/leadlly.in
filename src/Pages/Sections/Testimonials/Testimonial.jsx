@@ -18,7 +18,7 @@ const ComponentName = () => {
         whileInView={{y:"0% ",opacity:1}}
         transition={{duration:0.5 ,ease:"easeInOut"}}
 
-         className=' flex flex-col ring-2 bg-[#] opacity-50    rounded-2xl ring-offset-2 shadow-lg shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
+         className=' flex flex-col ring-2 ring-pink-50 bg-[#f9f4fe] opacity-50    rounded-2xl ring-offset-2 shadow-lg shadow-purple-300 w-[90vw] p-5 m-5 md:w-[25vw]'>
              
             <h3 className='text-[1rem] text-indigo-950 font-sans p-1 mt-5'>
             Mahip bhaiya is a very good mentor, the way in which he guided me and the tasks that he gave me are very good. I saw improvement in my learning skills. Also tracker and error book ne bhi meri bahut help ki. Overall leadlly helped me a lot in my journey....

@@ -86,7 +86,7 @@ export default function Navbar() {
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
-                mx={"5vw"}
+                mx={"2vw"}
               >
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
                   <Link to="/about-us">
@@ -100,9 +100,7 @@ export default function Navbar() {
                   </Link>
                 </Button>
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link to="/">
-                    Contact Us
-                  </Link>
+                  <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a>
                 </Button>
                 
 
@@ -134,9 +132,7 @@ export default function Navbar() {
                     <b>Courses</b>
                   </Link></DropdownItem>
                   
-                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link to="/">
-                    <b>Contact Us</b>
-                  </Link></DropdownItem>
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a></DropdownItem>
                   
                   
 

@@ -14,20 +14,20 @@ export default function Footer(){
             <div className="flex  flex-col w-[30vw] h-[40vh] justify-start gap-[5%] ">
 
             <div className="inline-block  ml-[3vw] mt-3 "><img className="md:h-14" src={logo} alt="" /></div>
-            <div className=" mx-auto md:w-[30vw] md:mx-auto w-[55vw] pl-2 "><p className="text-purple-950 text-left text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
+            <div className=" mx-auto md:w-[30vw] md:mx-auto md:ml-7 w-[55vw] pl-2 "><p className="text-purple-950 text-left text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
             </div>
             
             <div className="flex flex-col ml-[25vw] w-[40vw] md:w-[40vw] h-full ">
             <div className="md:mx-auto  text-[#5a10d9]"><h1 className="mt-5 leading-tight font-lato mb-2 text-[1.2rem]  md:text-[1.6rem] font-bold ">Important Links </h1>
             <h2 className="text-[0.8rem] md:text-[1rem]">
-             <Link to="/">Contact Us</Link>
+            <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a>
             <br/> <Link to="/">Become a Mentor</Link>
             <br/> <Link to="/about-us">About Us</Link>
             
             </h2> 
             </div>
 
-            <div className="mx-auto"><h1 className="mt-[10%]  font-lato  text-[#5a10d9] text-[1.2rem] md:text-[1.6rem] font-bold ">FOLLOW US: <br /></h1></div>
+            <div className="mx-auto"><h1 className="mt-[10%]  font-lato  text-[#5a10d9] text-[1.2rem] md:text-[1.6rem] font-bold ">Follow us <br /></h1></div>
 
             <div className="flex  justify-center md:gap-2 mx-auto  bg-purple-100  ">
             
