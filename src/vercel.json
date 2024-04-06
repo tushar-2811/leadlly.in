@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/question",
+        "destination": "https://question-bank-web-flame.vercel.app",
+        "permanent": false
+      }
+    ]
+  }
+  

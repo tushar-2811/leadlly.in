@@ -23,6 +23,7 @@ export default function Footer(){
              <Link to="/">Contact Us</Link>
             <br/> <Link to="/">Become a Mentor</Link>
             <br/> <Link to="/about-us">About Us</Link>
+            <br/> <Link to="/question">Question Bank</Link>
             
             </h2> 
             </div>
