@@ -8,6 +8,7 @@ import smily from "./../../imgs/smily.png"
 import logo from "./../../imgs/logos/Group 122.svg"
 export default function Footer(){
 
+    
 
     return(
         <div className="flex  gap-2  bg-purple-100  ">
@@ -43,3 +44,4 @@ export default function Footer(){
     )
 
 }
+

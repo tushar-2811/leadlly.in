@@ -49,7 +49,7 @@ export default function BouncyCardsFeatures(){
       </div>
       <div className="flex flex-col h-auto  justify-center">
       <motion.div initial={{ y:"80%" }} whileInView={{ y:"0%"}} transition={{ duration: 1,ease:"easeOut" }} className=" hidden ml-[5vw] md:flex w-[50vw] h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
-        <h1 className="font-sans text-[5vw] leading-tight font-bold text-transparent">Lacking a proper Schedule and <span className="text-transparent text-[6vw]">PROCATINATE</span> <br /> a lot? </h1>
+        <h1 className="font-sans text-[5vw] leading-tight font-bold text-transparent">Lacking a proper Schedule and <span className="text-transparent text-[6vw]">PROCRASTINATE</span> <br /> a lot? </h1>
 
       </motion.div>
       </div>
@@ -92,7 +92,7 @@ export default function BouncyCardsFeatures(){
       </div>
       <div className="flex flex-col w-full mt-[5vh] h-[30vh] justify-center">
       <motion.div initial={{ y:"50%" }} whileInView={{ y:"0%"}} transition={{ duration: 0.7,ease:"easeOut" }} className=" md:hidden flex w-[65vw] h-auto justify-center bg-clip-text bg-gradient-to-br from-[#5a10d9] via-indigo-400 to-indigo-900 items-center z-10">
-        <h1 className="font-sans text-[1.7rem] leading-tight font-bold text-transparent">Lacking a proper  Schedule and <span className="text-transparent text-[2rem]">Procastinate</span> a lot? </h1>
+        <h1 className="font-sans text-[1.7rem] leading-tight font-bold text-transparent">Lacking a proper  Schedule and <span className="text-transparent text-[2rem]">Procrastinate</span> a lot? </h1>
 
       </motion.div>
       </div>
